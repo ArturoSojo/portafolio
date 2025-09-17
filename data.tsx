@@ -1,6 +1,6 @@
 import { BookText, CodeSquare, HomeIcon, UserRound, Linkedin, Twitter, Rss, Twitch, Youtube, Crop, Pencil, Computer, Book, Rocket, Speech, Facebook, Instagram} from "lucide-react";
 
-export const socialNetworks = [
+export const socialNetworks = [    
     {
         id: 1,
         logo: <Youtube size={30} strokeWidth={1} />,
@@ -10,7 +10,7 @@ export const socialNetworks = [
     {
         id: 2,
         logo: <Linkedin size={30} strokeWidth={1} />,
-        src: "https://www.linkedin.com/in/arturo-sojo-4988a3197/",
+        src: "https://www.linkedin.com/in/arturo-sojo-57b913364",
     },
     {
         id: 3,
@@ -55,20 +55,21 @@ export const itemsNavbar = [
 ];
 
 export const dataAboutPage = [
-    {
+      {
         id: 1,
+        title: "Analísta de Sistemas",
+        subtitle: "Pegaso Consulting C.A.",
+        description: "Actualmente trabajo en una empresa dedicada al desarrollo de software, donde desempeño un rol clave en la creación y mantenimiento de soluciones tecnológicas.",
+        date: "2025",
+    },
+    {
+        id: 2,
         title: "Frontend Developer",
         subtitle: "Servicios Paguetodo C.A.",
         description: "Trabajé con un equipo maravilloso para desarrollar ptoductos digitales de alta calidad que impulsaron el éxito de clientes.",
         date: "2023 - 2025",
     },
-    {
-        id: 2,
-        title: "Administrador de Empresas",
-        subtitle: "U.P.T.B.A.L.",
-        description: "Estudié en la Universidad Poletécnica Territorial 'Argelia Laya' Administración de empresas durante 2 años.",
-        date: "2021 - 2023",
-    },
+  
     {
         id: 3,
         title: "Informática",
@@ -130,49 +131,56 @@ export const serviceData = [
 ];
 
 export const dataPortfolio = [
-    {
+        {
         id: 1,
+        title: "Learning English AI",
+        image: "/learningenglihsia.png",
+        urlGithub: "https://github.com/ArturoSojo/learning_english_ai",
+        urlDemo: "https://drive.google.com/drive/folders/1v4mDQW8Dh3sqZTXc4-Jqr0Rs83J6Nout?usp=sharing",
+        urlPlayStore: null,
+    },
+    {
+        id: 2,
+        title: "Eduletter",
+        image: "/eduletter.png",
+        urlGithub: "https://github.com/ArturoSojo/eduletter",
+        urlDemo: "https://www.youtube.com/watch?v=8dRXQF4eYJA&t=65s",
+        urlPlayStore: "https://play.google.com/store/apps/details?id=com.artlex.eduletter_app",
+    },
+    
+    {
+        id: 3,
         title: "APP Service Payments",
         image: "/image-1.png",
         urlGithub: "https://github.com/ArturoSojo/servicepay-pos",
         urlDemo: "https://www.youtube.com/shorts/sAOwu_-WLBc",
+        urlPlayStore: null,
     },
     {
-        id: 6,
+        id: 4,
         title: "Website",
         image: "/image-6.png",
         urlGithub: "https://github.com/ArturoSojo/website_paguetodo",
         urlDemo: "https://paguetodo.com/",
+        urlPlayStore: null,
     },
     {
-        id: 2,
+        id: 5,
         title: "CliffPickleball",
         image: "/image-2.jpg",
         urlGithub: "https://github.com/ArturoSojo/cliff_pickleball",
         urlDemo: "https://www.youtube.com/shorts/NitooJQCq6I",
+        urlPlayStore: null,
     },
     {
-        id: 3,
+        id: 6,
         title: "Online Store",
         image: "/image-3.png",
         urlGithub: "https://github.com/ArturoSojo/STO",
         urlDemo: "https://youtu.be/odptyxik5Wk",
+        urlPlayStore: null,
     },
-    {
-        id: 4,
-        title: "ARTLEX",
-        image: "/image-4.jpg",
-        urlGithub: "https://github.com/ArturoSojo/artlex",
-        urlDemo: "https://www.youtube.com/shorts/W6NppqNkH5Y",
-    },
-    {
-        id: 5,
-        title: "ServiciosYa",
-        image: "/image-5.jpg",
-        urlGithub: "https://github.com/ArturoSojo/servicios_ya_ve",
-        urlDemo: "https://www.youtube.com/shorts/B6CBIvyBBSU",
-    },
-    
+
    
 ];
 

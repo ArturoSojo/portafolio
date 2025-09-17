@@ -2,6 +2,7 @@
 
 import { socialNetworks } from "@/data";
 import Link from "next/link";
+import Image from "next/image";
 import { MotionTransition } from "./transition-component";
 
 const Header = () => {
@@ -16,6 +17,13 @@ const Header = () => {
                         </h1>
                     </Link>
                     <div className="flex items-center justify-center gap-7">
+                        <Image
+                            src="/googleplay.png"
+                            alt="Ver perfil de Desarrolador"
+                            width={40}
+                            height={40}
+                            className="object-contain"
+                        ></Image>
                         {socialNetworks.map(({ logo, src, id }) => (
                             <Link
                                 key={id}
