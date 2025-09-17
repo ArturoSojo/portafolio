@@ -174,10 +174,10 @@ export const dataPortfolio = [
     },
     {
         id: 6,
-        title: "Online Store",
-        image: "/image-3.png",
-        urlGithub: "https://github.com/ArturoSojo/STO",
-        urlDemo: "https://youtu.be/odptyxik5Wk",
+        title: "Robust PickleBall",
+        image: "/robustpickleball.png",
+        urlGithub: "https://www.robustpickleball.com/",
+        urlDemo: "https://www.robustpickleball.com/",
         urlPlayStore: null,
     },
 
