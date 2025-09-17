@@ -8,7 +8,7 @@ interface PortfolioBoxProps {
         image: string;
         urlGithub: string;
         urlDemo: string;
-        urlPlayStore: string;
+        urlPlayStore: string | null;
     };
 }
 
