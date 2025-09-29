@@ -19,7 +19,7 @@ const Header = () => {
                     <div className="flex items-center justify-center gap-7">
                         <Image
                             src="/googleplay.png"
-                            alt="Ver perfil de Desarrolador"
+                            alt="View developer profile"
                             width={40}
                             height={40}
                             className="object-contain"

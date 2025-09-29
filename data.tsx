@@ -57,24 +57,24 @@ export const itemsNavbar = [
 export const dataAboutPage = [
       {
         id: 1,
-        title: "Analísta de Sistemas",
+        title: "Systems Analyst",
         subtitle: "Pegaso Consulting C.A.",
-        description: "Actualmente trabajo en una empresa dedicada al desarrollo de software, donde desempeño un rol clave en la creación y mantenimiento de soluciones tecnológicas.",
+        description: "Currently working at a software development company where I play a key role in creating and maintaining technology solutions.",
         date: "2025",
     },
     {
         id: 2,
         title: "Frontend Developer",
         subtitle: "Servicios Paguetodo C.A.",
-        description: "Trabajé con un equipo maravilloso para desarrollar ptoductos digitales de alta calidad que impulsaron el éxito de clientes.",
+        description: "Collaborated with an outstanding team to build high-quality digital products that accelerated client success.",
         date: "2023 - 2025",
     },
   
     {
         id: 3,
-        title: "Informática",
+        title: "Computer Science",
         subtitle: "U.P.T.B.A.L",
-        description: "Estudié en la Universidad Poletécnica Territorial 'Argelia Laya' Informática durante 2 años.",
+        description: "Studied Computer Science at Universidad Politecnica Territorial 'Argelia Laya' for two years.",
         date: "2019 - 2021",
     },
     
@@ -84,28 +84,28 @@ export const dataCounter = [
     {
         id: 0,
         endCounter: 2,
-        text: "Años de experiencia",
+        text: "Years of experience",
         lineRight: true,
         lineRightMobile: true,
     },
     {
         id: 1,
         endCounter: 5,
-        text: "Lenguajes conocidos",
+        text: "Languages mastered",
         lineRight: true,
         lineRightMobile: false,
     },
     {
         id: 2,
         endCounter: 14,
-        text: "Proyectos finalizados",
+        text: "Projects delivered",
         lineRight: true,
         lineRightMobile: true,
     },
     {
         id: 3,
         endCounter: 30,
-        text: "Cursos realizados",
+        text: "Courses completed",
         lineRight: false,
         lineRightMobile: false,
     },
@@ -114,18 +114,18 @@ export const dataCounter = [
 export const serviceData = [
     {
         icon: <Crop />,
-        title: "Desarrollo móvil",
-        description: "Diseño y desarrollo de aplicaciones móviles a interactivas, optimizadas para un buen rendimiento."
+        title: "Mobile development",
+        description: "Design and build interactive mobile applications optimized for performance.",
         },
     {
         icon: <Pencil />,
-        title: "Diseño web",
-        description: "Diseño creativo y profesional de interfaces web intuitivas y atractivas, centradas en la experiencia del usuario",
+        title: "Web design",
+        description: "Create intuitive, attractive web interfaces centered on seamless user experiences.",
     },
     {
         icon: <Computer />,
-        title: "Desarrollo web",
-        description: "Diseño y desarrollo de sitios web a medida, adaptados a tus necesidades",
+        title: "Web development",
+        description: "Develop tailor-made websites aligned with your goals and requirements.",
     },
   
 ];
@@ -189,42 +189,42 @@ export const dataTestimonials = [
         id: 1,
         name: "George Snow",
         description:
-            "¡Increíble plataforma! Los testimonios aquí son genuinos y me han ayudado a tomar decisiones informadas. ¡Altamente recomendado!",
+            "Incredible platform! The testimonials here are genuine and helped me make informed decisions. Highly recommended!",
         imageUrl: "/profile1.png",
     },
     {
         id: 2,
-        name: "Juan Pérez",
+        name: "Juan Perez",
         description:
-            "Me encanta la variedad de testimonios disponibles en esta página. Es inspirador ver cómo otras personas han superado desafíos similares a los míos. ¡Gracias por esta invaluable fuente de motivación!",
+            "I love the variety of testimonials available on this page. It is inspiring to see how others overcame challenges similar to mine. Thanks for this invaluable source of motivation!",
         imageUrl: "/profile2.png",
     },
     {
         id: 3,
-        name: "María García",
+        name: "Maria Garcia",
         description:
-            "Excelente recurso para obtener opiniones auténticas sobre diferentes productos y servicios. Me ha ayudado mucho en mis compras en línea. ¡Bravo por este sitio!",
+            "Excellent resource for authentic opinions on different products and services. It has helped me a lot with my online purchases. Bravo to the team!",
         imageUrl: "/profile3.png",
     },
     {
         id: 4,
         name: "Laura Snow",
         description:
-            "¡Qué descubrimiento tan fantástico! Los testimonios aquí son honestos y detallados. Me siento más seguro al tomar decisiones después de leer las experiencias compartidas por otros usuarios.",
+            "What a fantastic discovery! The testimonials here are honest and detailed. I feel more confident making decisions after reading the experiences other users share.",
         imageUrl: "/profile4.png",
     },
     {
         id: 5,
-        name: "Carlos Sánchez",
+        name: "Carlos Sanchez",
         description:
-            "Una joya en la web. Los testimonios son fáciles de encontrar y están bien organizados. ¡Definitivamente mi destino número uno cuando necesito referencias confiables!",
+            "A hidden gem on the web. The testimonials are easy to find and well organized. Definitely my number one destination when I need trustworthy references!",
         imageUrl: "/profile5.png",
     },
     {
         id: 6,
-        name: "Antonio Martínez",
+        name: "Antonio Martinez",
         description:
-            "¡Fantástico recurso para aquellos que buscan validación antes de tomar decisiones importantes! Los testimonios aquí son veraces y realmente útiles. ¡Gracias por simplificar mi proceso de toma de decisiones!",
+            "Fantastic resource for anyone seeking validation before making important decisions! The testimonials here are honest and truly useful. Thanks for simplifying my decision-making process!",
         imageUrl: "/profile6.png",
     },
 ];

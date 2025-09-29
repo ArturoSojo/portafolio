@@ -13,7 +13,7 @@ const urbanist = Urbanist({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Arturo Sojo",
-  description: "Arturo´s Portfolio",
+  description: "Arturo Sojo's portfolio",
 };
 
 export default function RootLayout({
@@ -31,3 +31,4 @@ export default function RootLayout({
     </html>
   );
 }
+

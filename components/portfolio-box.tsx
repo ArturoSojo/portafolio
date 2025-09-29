@@ -27,7 +27,7 @@ const PortfolioBox = (props: PortfolioBoxProps) => {
                     <Link href={urlPlayStore} target="_blank">
                         <Image
                             src="/playstore.png"
-                            alt="Ir a Play Store"
+                            alt="Open on Play Store"
                             width={100}
                             height={180}
                             className="object-contain"
