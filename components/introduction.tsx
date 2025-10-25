@@ -36,7 +36,7 @@ const Introduction = () => {
                         </a>
                         <a href="https://wa.me/584168624450"
                         className="px-3 py-2 my-5 transition-all border-2 cursor-pointer text-md w-fit text-secondary border-secondary rounded-xl hover:shadow-xl hover:shadow-secondary">
-                        Let's connect
+                        Let&apos;s connect
                         </a>
 
                     </div>

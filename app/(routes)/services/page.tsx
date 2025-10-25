@@ -16,11 +16,11 @@ const ServicesPage = () => {
       My <span className="font-bold text-secondary">skills.</span>
     </h1>
     <p className="mb-3 text-xl text-gray-300 aling-justify">
-      I bring mobile and front-end web development expertise focused on building engaging, high-performing products. Leveraging modern technologies, I design intuitive, responsive interfaces that reflect each brand's identity and strengthen its presence.
+      I bring mobile and front-end web development expertise focused on building engaging, high-performing products. Leveraging modern technologies, I design intuitive, responsive interfaces that reflect each brand&apos;s identity and strengthen its presence.
     </p>
     <a href="https://wa.me/584168624450"
         className="px-3 py-2 my-5 transition-all border-2 cursor-pointer text-md w-fit text-secondary border-secondary rounded-xl hover:shadow-xl hover:shadow-secondary">
-        Let's connect
+        Let&apos;s connect
     </a>
   </div>
 
