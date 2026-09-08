@@ -32,7 +32,7 @@ import {
 
 import { getProject, nextProject } from "@/data-projects";
 import ProjectShell from "@/components/projects/project-shell";
-import { BrandButton, Chip, CountMetric, Marquee, ProjectOutro, SectionHead } from "@/components/projects/bits";
+import { BrandButton, Chip, CountMetric, Marquee, ProjectOutro, SampleDataNote, SectionHead } from "@/components/projects/bits";
 import { AutoVideo, BrowserFrame, DragRail, ShotCard } from "@/components/projects/frames";
 import { Reveal, RevealWords, Stagger, StaggerItem, useEnteredView } from "@/components/projects/reveal";
 
@@ -1781,7 +1781,7 @@ const Landing = () => {
                     </Reveal>
 
                     <Reveal className="mt-8" delay={0.06}>
-                        <BrowserFrame dark={false} url="swapdealers.app/matches">
+                        <BrowserFrame dark={false} url="SwapDealer · Coincidencias">
                             <MockMatches />
                         </BrowserFrame>
                         <p className="sd-mono sd-caps mt-3" style={{ color: "rgba(14,15,12,0.42)" }}>
@@ -1802,7 +1802,7 @@ const Landing = () => {
 
                     <div className="mt-12 grid gap-8 lg:grid-cols-[1.15fr_0.85fr] lg:items-start">
                         <Reveal>
-                            <BrowserFrame dark={false} url="swapdealers.app/propuesta/8f21">
+                            <BrowserFrame dark={false} url="SwapDealer · Propuesta">
                                 <MockProposal />
                             </BrowserFrame>
                             <p className="sd-mono sd-caps mt-3" style={{ color: "rgba(14,15,12,0.42)" }}>
@@ -1916,7 +1916,7 @@ const Landing = () => {
                         </Reveal>
 
                         <Reveal direction="left" delay={0.08}>
-                            <BrowserFrame dark={false} url="swapdealers.app/bandeja">
+                            <BrowserFrame dark={false} url="SwapDealer · Bandeja">
                                 <MockInbox />
                             </BrowserFrame>
                             <p className="sd-mono sd-caps mt-3" style={{ color: "rgba(14,15,12,0.42)" }}>
@@ -1942,7 +1942,7 @@ const Landing = () => {
                     />
 
                     <Reveal className="mt-12">
-                        <BrowserFrame dark={false} url="swapdealers.app/panel">
+                        <BrowserFrame dark={false} url="SwapDealer · Panel">
                             <MockDashboard />
                         </BrowserFrame>
                         <p className="sd-mono sd-caps mt-3" style={{ color: "rgba(14,15,12,0.42)" }}>
@@ -1965,7 +1965,9 @@ const Landing = () => {
                         </div>
                     )}
                 </div>
-            </section>
+            
+                    <SampleDataNote className="mt-8" />
+                </section>
 
             {/* ═══════════════════ MARQUESINA ═══════════════════ */}
             <div

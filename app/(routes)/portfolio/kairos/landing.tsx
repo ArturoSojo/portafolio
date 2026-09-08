@@ -9,7 +9,7 @@ import { ArrowRight, Globe, Radio, TrendingDown, TrendingUp } from "lucide-react
 
 import { getProject, nextProject } from "@/data-projects";
 import ProjectShell from "@/components/projects/project-shell";
-import { BrandButton, Chip, CountMetric, Magnetic, ProjectOutro, SectionHead } from "@/components/projects/bits";
+import { BrandButton, Chip, CountMetric, Magnetic, ProjectOutro, SampleDataNote, SectionHead } from "@/components/projects/bits";
 import { BrowserFrame, DragRail, ShotCard } from "@/components/projects/frames";
 import { Reveal, RevealWords, Stagger, StaggerItem } from "@/components/projects/reveal";
 
@@ -1480,7 +1480,9 @@ const Landing = () => {
                                 </Reveal>
                             </div>
                         </div>
-                    </section>
+                    
+                    <SampleDataNote className="mt-8" />
+                </section>
 
                     {/* ───────── niveles de datos ───────── */}
                     <section className="px-4 py-16 md:px-6 md:py-24">

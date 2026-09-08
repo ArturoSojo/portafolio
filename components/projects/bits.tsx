@@ -1,10 +1,10 @@
 "use client"
 
 import Link from "next/link";
-import { ArrowRight, ArrowUpRight, Github, Globe, MessageCircle, Play } from "lucide-react";
+import { ArrowRight, ArrowUpRight, Github, Globe, Info, MessageCircle, Play, Youtube } from "lucide-react";
 import { motion, useMotionValue, useReducedMotion, useSpring, useTransform } from "framer-motion";
 import { useEffect, useRef, useState, type MouseEvent } from "react";
-import type { ProjectLinks } from "./project-shell";
+import { isVideoLink, type ProjectLinks } from "./project-shell";
 
 /** Etiqueta pequeña con el color de la marca. */
 export const Chip = ({ children, className }: { children: React.ReactNode; className?: string }) => (
@@ -18,6 +18,18 @@ export const Chip = ({ children, className }: { children: React.ReactNode; class
     >
         {children}
     </span>
+);
+
+/**
+ * Nota para las recreaciones de interfaz: los importes, nombres y cifras que se ven
+ * dentro de las maquetas son de ejemplo. Las cifras verificables del proyecto viven
+ * en la sección de métricas.
+ */
+export const SampleDataNote = ({ className }: { className?: string }) => (
+    <p className={`inline-flex items-center gap-1.5 text-[11px] opacity-50 ${className ?? ""}`}>
+        <Info size={12} aria-hidden />
+        Las maquetas reproducen la interfaz real; los datos que muestran son de ejemplo.
+    </p>
 );
 
 /** Encabezado de sección: número, título y bajada. */
@@ -41,21 +53,27 @@ export const SectionHead = ({
     </div>
 );
 
-/** Contador que arranca al entrar en pantalla. Acepta valores tipo "12", "+40", "3 apps". */
+/**
+ * Contador que arranca al entrar en pantalla. Acepta valores tipo "12", "+40", "3 apps".
+ *
+ * El servidor pinta la cifra final, no un cero: si el observador nunca llega a
+ * dispararse (JavaScript desactivado, pestaña en segundo plano, un rastreador
+ * leyendo el HTML) la página seguiría diciendo la verdad. La cuenta atrás a cero
+ * ocurre sólo en el cliente, ya montado.
+ */
 export const CountMetric = ({ value, label }: { value: string; label: string }) => {
     const ref = useRef<HTMLDivElement>(null);
-    const [shown, setShown] = useState(0);
     const reduce = useReducedMotion();
     const match = value.match(/\d+/);
     const target = match ? parseInt(match[0], 10) : 0;
 
+    const [shown, setShown] = useState<number | null>(null);
+
     useEffect(() => {
         const node = ref.current;
-        if (!node || !target) return;
-        if (reduce) {
-            setShown(target);
-            return;
-        }
+        if (!node || !target || reduce) return;
+
+        setShown(0);
         const observer = new IntersectionObserver(
             ([entry]) => {
                 if (!entry.isIntersecting) return;
@@ -75,11 +93,11 @@ export const CountMetric = ({ value, label }: { value: string; label: string }) 
         return () => observer.disconnect();
     }, [target, reduce]);
 
+    const text = target && shown !== null ? value.replace(/\d+/, String(shown)) : value;
+
     return (
         <div ref={ref}>
-            <p className="text-3xl font-extrabold md:text-5xl brand-gradient-text">
-                {target ? value.replace(/\d+/, String(shown)) : value}
-            </p>
+            <p className="text-3xl font-extrabold md:text-5xl brand-gradient-text">{text}</p>
             <p className="mt-2 text-xs uppercase tracking-[0.18em] opacity-55">{label}</p>
         </div>
     );
@@ -268,7 +286,15 @@ export const ProjectOutro = ({
                         )}
                         {links?.web && (
                             <BrandButton href={links.web} variant={links.play ? "outline" : "solid"}>
-                                <Globe size={16} /> Ver el sitio
+                                {isVideoLink(links.web) ? (
+                                    <>
+                                        <Youtube size={16} /> Ver el vídeo
+                                    </>
+                                ) : (
+                                    <>
+                                        <Globe size={16} /> Ver el sitio
+                                    </>
+                                )}
                             </BrandButton>
                         )}
                         {links?.demo && !links.web && (

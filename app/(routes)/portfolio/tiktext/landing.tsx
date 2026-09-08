@@ -29,7 +29,7 @@ import {
 
 import { getProject, nextProject } from "@/data-projects";
 import ProjectShell from "@/components/projects/project-shell";
-import { BrandButton, Chip, CountMetric, Marquee, ProjectOutro, SectionHead } from "@/components/projects/bits";
+import { BrandButton, Chip, CountMetric, Marquee, ProjectOutro, SampleDataNote, SectionHead } from "@/components/projects/bits";
 import { Reveal, Stagger, StaggerItem } from "@/components/projects/reveal";
 import { AutoVideo, DragRail, PhoneFrame, ShotCard } from "@/components/projects/frames";
 
@@ -1239,7 +1239,9 @@ const Landing = () => {
                         </div>
                     </div>
                 </div>
-            </section>
+            
+                    <SampleDataNote className="mt-8" />
+                </section>
 
             {/* Galería de material real, si el proyecto llega a tenerlo. */}
             {p.media.length > 0 && (

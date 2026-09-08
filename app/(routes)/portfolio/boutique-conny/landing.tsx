@@ -14,7 +14,7 @@ const fraunces = Fraunces({ subsets: ["latin"], weight: ["400", "600", "700"], v
 const poppins = Poppins({ subsets: ["latin"], weight: ["300", "400", "500", "600", "700"], variable: "--bc-sans", display: "swap" });
 
 import ProjectShell from "@/components/projects/project-shell";
-import { BrandButton, Chip, CountMetric, Marquee, ProjectOutro, SectionHead } from "@/components/projects/bits";
+import { BrandButton, Chip, CountMetric, Marquee, ProjectOutro, SampleDataNote, SectionHead } from "@/components/projects/bits";
 import { Reveal, Stagger, StaggerItem, RevealWords } from "@/components/projects/reveal";
 import { AutoVideo, BrowserFrame, DragRail, PhoneFrame, ShotCard } from "@/components/projects/frames";
 
@@ -1620,7 +1620,7 @@ const Landing = () => {
                     <Reveal className="mt-12" direction="scale">
                         <div className="bc-scroll-x">
                             <div className="min-w-[640px]">
-                                <BrowserFrame url="boutique-conny-864ed.web.app/#resumen" dark={false}>
+                                <BrowserFrame url="Boutique Conny · Resumen" dark={false}>
                                     <MockDashboard />
                                 </BrowserFrame>
                             </div>
@@ -1634,7 +1634,9 @@ const Landing = () => {
                         Recharts sobre los mismos onSnapshot que alimentan el inventario
                     </p>
                 </div>
-            </section>
+            
+                    <SampleDataNote className="mt-8" />
+                </section>
 
             {/* ═══════════════════ 06 · EL CIERRE QUE SE VA ═══════════════════ */}
             <section className="relative px-4 py-20 md:px-6 md:py-28">

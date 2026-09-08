@@ -1,7 +1,7 @@
 "use client"
 
 import Link from "next/link";
-import { ArrowLeft, ArrowUpRight, Github, Globe, Play } from "lucide-react";
+import { ArrowLeft, ArrowUpRight, Github, Globe, Play, Youtube } from "lucide-react";
 import { motion, useScroll, useSpring } from "framer-motion";
 import type { CSSProperties } from "react";
 
@@ -75,11 +75,16 @@ const ProjectShell = ({ name, brand, links, children, className }: ProjectShellP
     );
 };
 
+/** Varios proyectos no tienen web publicada: su `links.web` es un vídeo de demostración. */
+export const isVideoLink = (url?: string) =>
+    !!url && /(?:youtube\.com|youtu\.be|vimeo\.com)/i.test(url);
+
 export const ProjectTopBar = ({ name, links }: { name: string; links?: ProjectLinks }) => (
     <div className="fixed top-0 left-0 right-0 z-50 backdrop-blur-xl bg-[color-mix(in_srgb,var(--brand-bg)_78%,transparent)] border-b border-white/10">
         <div className="flex items-center justify-between max-w-6xl gap-3 px-4 mx-auto h-14 md:px-6">
             <Link
                 href="/portfolio"
+                aria-label="Volver a todos los proyectos"
                 className="inline-flex items-center gap-2 text-sm transition-colors opacity-80 hover:opacity-100 shrink-0"
             >
                 <ArrowLeft size={16} />
@@ -95,8 +100,12 @@ export const ProjectTopBar = ({ name, links }: { name: string; links?: ProjectLi
                     </TopLink>
                 )}
                 {links?.web && (
-                    <TopLink href={links.web} label="Sitio" tone="ghost">
-                        <Globe size={14} />
+                    <TopLink
+                        href={links.web}
+                        label={isVideoLink(links.web) ? "Vídeo" : "Sitio"}
+                        tone="ghost"
+                    >
+                        {isVideoLink(links.web) ? <Youtube size={14} /> : <Globe size={14} />}
                     </TopLink>
                 )}
                 {links?.demo && !links.web && (
@@ -129,6 +138,7 @@ const TopLink = ({
         href={href}
         target="_blank"
         rel="noreferrer"
+        aria-label={label}
         className={`inline-flex items-center gap-1.5 rounded-full px-3 py-1.5 text-xs font-medium transition-all duration-300 ${
             tone === "solid"
                 ? "text-[color:var(--brand-on-brand)] hover:brightness-110"

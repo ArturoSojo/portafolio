@@ -32,7 +32,7 @@ import {
 
 import { getProject, nextProject } from "@/data-projects";
 import ProjectShell from "@/components/projects/project-shell";
-import { BrandButton, Chip, CountMetric, ProjectOutro, SectionHead } from "@/components/projects/bits";
+import { BrandButton, Chip, CountMetric, ProjectOutro, SampleDataNote, SectionHead } from "@/components/projects/bits";
 import { BrowserFrame, DragRail, PhoneFrame, ShotCard } from "@/components/projects/frames";
 import { Reveal, RevealWords, Stagger, StaggerItem } from "@/components/projects/reveal";
 
@@ -1366,7 +1366,9 @@ const Landing = () => {
                         </Reveal>
                     </div>
                 </div>
-            </section>
+            
+                    <SampleDataNote className="mt-8" />
+                </section>
 
             {/* ══════════════════════ MÉTRICAS ══════════════════════ */}
             <section

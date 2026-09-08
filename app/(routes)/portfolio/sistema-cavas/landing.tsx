@@ -40,15 +40,7 @@ import {
 
 import { getProject, nextProject } from "@/data-projects";
 import ProjectShell from "@/components/projects/project-shell";
-import {
-    BrandButton,
-    Chip,
-    CountMetric,
-    Magnetic,
-    Marquee,
-    ProjectOutro,
-    SectionHead,
-} from "@/components/projects/bits";
+import { BrandButton, Chip, CountMetric, Magnetic, Marquee, ProjectOutro, SampleDataNote, SectionHead } from "@/components/projects/bits";
 import { BrowserFrame, DragRail, PhoneFrame } from "@/components/projects/frames";
 import { Reveal, RevealWords, Stagger, StaggerItem, useEnteredView } from "@/components/projects/reveal";
 
@@ -1301,7 +1293,7 @@ const Landing = () => {
                                     Las pantallas que <span className="text-[#6FD3E0]">ya compilan</span>
                                 </>
                             }
-                            lead="Seis pantallas construidas en la Fase 0, recreadas aquí con los mismos colores, medidas y textos que pinta la app."
+                            lead="Cinco pantallas construidas en la Fase 0, recreadas aquí con los mismos colores, medidas y textos que pinta la app."
                         />
 
                         <div className="flex items-center gap-2 rounded-full border border-[#2B3F46] bg-[#16242A] p-1">
@@ -1356,7 +1348,9 @@ const Landing = () => {
                         </p>
                     </Reveal>
                 </div>
-            </section>
+            
+                    <SampleDataNote className="mt-8" />
+                </section>
 
             {/* ══════════════════ 8 · LA PALETA SALIÓ DEL LOGO ══════════════════ */}
             {logo && (

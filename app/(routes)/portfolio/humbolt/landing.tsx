@@ -38,7 +38,7 @@ import {
 
 import { getProject, nextProject } from "@/data-projects";
 import ProjectShell from "@/components/projects/project-shell";
-import { BrandButton, Chip, CountMetric, Marquee, ProjectOutro, SectionHead } from "@/components/projects/bits";
+import { BrandButton, Chip, CountMetric, Marquee, ProjectOutro, SampleDataNote, SectionHead } from "@/components/projects/bits";
 import { BrowserFrame, PhoneFrame, ShotCard, AutoVideo, DragRail } from "@/components/projects/frames";
 import { Reveal, Stagger, StaggerItem, useEnteredView } from "@/components/projects/reveal";
 
@@ -1411,7 +1411,7 @@ const Landing = () => {
                     />
 
                     <Reveal className="mt-12">
-                        <BrowserFrame url="axiomcoretech.store/humbolt/ · login" dark={false}>
+                        <BrowserFrame url="Humbolt · Acceso" dark={false}>
                             <MockLogin />
                         </BrowserFrame>
                         <p className="hb-mono mt-3 text-[10px] uppercase tracking-[0.16em] text-[#003153]/45">
@@ -1479,7 +1479,9 @@ const Landing = () => {
                         </Reveal>
                     )}
                 </div>
-            </section>
+            
+                    <SampleDataNote className="mt-8" />
+                </section>
 
             {/* ═════════════════════════ 8 · DATOS EN VIVO ═════════════════════════ */}
             <section className="relative px-4 py-20 overflow-hidden md:px-6 md:py-28" style={{ background: "#003153", color: "#FFFFFF" }}>

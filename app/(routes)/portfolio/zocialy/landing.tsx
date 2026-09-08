@@ -24,16 +24,7 @@ import {
 
 import { getProject, nextProject } from "@/data-projects";
 import ProjectShell from "@/components/projects/project-shell";
-import {
-    BrandButton,
-    Chip,
-    CountMetric,
-    Magnetic,
-    Marquee,
-    ProjectOutro,
-    SectionHead,
-    TiltCard,
-} from "@/components/projects/bits";
+import { BrandButton, Chip, CountMetric, Magnetic, Marquee, ProjectOutro, SampleDataNote, SectionHead, TiltCard } from "@/components/projects/bits";
 import { BrowserFrame, DragRail, PhoneFrame } from "@/components/projects/frames";
 import { Reveal, RevealWords, Stagger, StaggerItem, useEnteredView } from "@/components/projects/reveal";
 
@@ -891,11 +882,11 @@ const Landing = () => {
                                 </Magnetic>
                             )}
                             <a
-                                href="#precios"
+                                href="#servicios"
                                 className="inline-flex items-center gap-2 px-6 py-3 text-sm font-semibold transition-colors rounded-full"
                                 style={{ background: "rgba(255,255,255,0.7)", border: `1px solid ${LINE}`, color: INK }}
                             >
-                                Ver precios <ArrowRight size={15} />
+                                Ver los servicios <ArrowRight size={15} />
                             </a>
                         </div>
 
@@ -1037,7 +1028,7 @@ const Landing = () => {
             </section>
 
             {/* ───────────────── MARQUESINA DE PLATAFORMAS ───────────────── */}
-            <section className="relative py-10 md:py-14" id="precios">
+            <section className="relative py-10 md:py-14" id="servicios">
                 <div className="zo-marquee space-y-3">
                     {[false, true].map((rev) => (
                         <div key={String(rev)} className="overflow-hidden">
@@ -1304,7 +1295,9 @@ const Landing = () => {
                         </Reveal>
                     </div>
                 </div>
-            </section>
+            
+                    <SampleDataNote className="mt-8" />
+                </section>
 
             {/* ───────────────── MARCA ───────────────── */}
             <section className="relative px-4 py-16 md:px-6 md:py-20" style={{ background: INK }}>

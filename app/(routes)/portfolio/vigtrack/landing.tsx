@@ -24,7 +24,7 @@ import {
 
 import { getProject, nextProject } from "@/data-projects";
 import ProjectShell from "@/components/projects/project-shell";
-import { Chip, CountMetric, Marquee, ProjectOutro, SectionHead } from "@/components/projects/bits";
+import { Chip, CountMetric, Marquee, ProjectOutro, SampleDataNote, SectionHead } from "@/components/projects/bits";
 import { BrowserFrame } from "@/components/projects/frames";
 import { Reveal, RevealWords, Stagger, StaggerItem, useEnteredView } from "@/components/projects/reveal";
 
@@ -1270,7 +1270,7 @@ const Landing = () => {
                         <RielFichaje />
                         <div className="flex items-center justify-between pt-4 mt-5 border-t border-white/10">
                             <span className="vt-mono text-[13px] font-semibold text-white">06:00 → 18:00</span>
-                            <span className="text-[10px] text-slate-500">turno diurno · relevo cada 12 h</span>
+                            <span className="text-[10px] text-slate-500">rol de guardias de 24 h</span>
                         </div>
                     </div>
                 </div>
@@ -1373,7 +1373,7 @@ const Landing = () => {
                                         { t: "Aplicación por rol", tone: "ok" as Tone },
                                         { t: "Nadie sabía el estado", tone: "crit" as Tone },
                                         { t: "Jornada con estado", tone: "ok" as Tone },
-                                        { t: "Decisiones por WhatsApp", tone: "crit" as Tone },
+                                        { t: "Decisiones sobre hojas de cálculo", tone: "crit" as Tone },
                                         { t: "Tres firmas auditables", tone: "ok" as Tone },
                                     ].map((row) => (
                                         <span
@@ -1648,7 +1648,9 @@ const Landing = () => {
                         </div>
                     </Reveal>
                 </div>
-            </section>
+            
+                    <SampleDataNote className="mt-8" />
+                </section>
 
             {/* ══════════════════ DATOS: parte numérica y plantilla ══════════════════ */}
             <section className="relative bg-[#e6ebf3] px-4 py-20 text-[#0f172a] md:px-6 md:py-28">

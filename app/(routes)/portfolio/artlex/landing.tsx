@@ -26,7 +26,7 @@ import {
 
 import { getProject, nextProject } from "@/data-projects";
 import ProjectShell from "@/components/projects/project-shell";
-import { BrandButton, Chip, CountMetric, Marquee, ProjectOutro, SectionHead } from "@/components/projects/bits";
+import { BrandButton, Chip, CountMetric, Marquee, ProjectOutro, SampleDataNote, SectionHead } from "@/components/projects/bits";
 import { Reveal, RevealWords, Stagger, StaggerItem } from "@/components/projects/reveal";
 import { AutoVideo, DragRail, PhoneFrame } from "@/components/projects/frames";
 
@@ -1220,7 +1220,9 @@ const Landing = () => {
                         </DragRail>
                     </div>
                 </div>
-            </section>
+            
+                    <SampleDataNote className="mt-8" />
+                </section>
 
             {/* ═══════════════ INVENTARIO DE SALA (features) ═══════════════ */}
             <section className="relative z-10 px-4 py-20 md:px-6 md:py-28">

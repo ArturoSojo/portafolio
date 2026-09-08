@@ -26,7 +26,7 @@ import {
 
 import { getProject, nextProject } from "@/data-projects";
 import ProjectShell from "@/components/projects/project-shell";
-import { BrandButton, Chip, CountMetric, Marquee, ProjectOutro, SectionHead } from "@/components/projects/bits";
+import { BrandButton, Chip, CountMetric, Marquee, ProjectOutro, SampleDataNote, SectionHead } from "@/components/projects/bits";
 import { DragRail, PhoneFrame } from "@/components/projects/frames";
 import { Reveal, Stagger, StaggerItem, useEnteredView } from "@/components/projects/reveal";
 
@@ -1012,6 +1012,8 @@ const Landing = () => {
                             com.paguetodo.servicepay.pos · {t.entry}
                         </p>
                     </div>
+                
+                    <SampleDataNote className="mt-8" />
                 </section>
 
                 <CutLine label="01 · el mostrador" />

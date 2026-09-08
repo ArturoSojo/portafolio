@@ -36,7 +36,7 @@ import {
 
 import { getProject, nextProject } from "@/data-projects";
 import ProjectShell from "@/components/projects/project-shell";
-import { Chip, CountMetric, Magnetic, Marquee, ProjectOutro, SectionHead, TiltCard } from "@/components/projects/bits";
+import { Chip, CountMetric, Magnetic, Marquee, ProjectOutro, SampleDataNote, SectionHead, TiltCard } from "@/components/projects/bits";
 import { AutoVideo, DragRail, PhoneFrame, ShotCard } from "@/components/projects/frames";
 import { Reveal, RevealWords, Stagger, StaggerItem, useEnteredView } from "@/components/projects/reveal";
 
@@ -1685,7 +1685,9 @@ const Landing = () => {
                         </p>
                     </div>
                 </div>
-            </section>
+            
+                    <SampleDataNote className="mt-8" />
+                </section>
 
             {/* ─────────────────── FUNCIONALIDADES como transcripción ─────────────────── */}
             <section className="relative px-4 py-20 md:px-6 md:py-28">

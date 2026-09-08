@@ -27,16 +27,7 @@ import {
 
 import { getProject, nextProject } from "@/data-projects";
 import ProjectShell from "@/components/projects/project-shell";
-import {
-    BrandButton,
-    Chip,
-    CountMetric,
-    Magnetic,
-    Marquee,
-    ProjectOutro,
-    SectionHead,
-    TiltCard,
-} from "@/components/projects/bits";
+import { BrandButton, Chip, CountMetric, Magnetic, Marquee, ProjectOutro, SampleDataNote, SectionHead, TiltCard } from "@/components/projects/bits";
 import { BrowserFrame, DragRail, PhoneFrame } from "@/components/projects/frames";
 import { Reveal, RevealWords, Stagger, StaggerItem, useEnteredView } from "@/components/projects/reveal";
 
@@ -1423,7 +1414,9 @@ const Landing = () => {
                         </p>
                     </div>
                 </div>
-            </section>
+            
+                    <SampleDataNote className="mt-8" />
+                </section>
 
             {/* ═════════════════ FUNCIONALIDADES (libro de órdenes) ═════════════════ */}
             <section className="relative px-4 py-20 md:px-6 md:py-28">
@@ -1435,37 +1428,33 @@ const Landing = () => {
                                 El libro de <span className="brand-gradient-text">lo que ya funciona</span>
                             </>
                         }
-                        lead="Dieciséis niveles de profundidad, listados como los pinta la app: índice, peso y descripción."
+                        lead="Dieciséis funcionalidades del repositorio, listadas como el libro de órdenes de la propia app."
                     />
 
                     <div className="mt-12 overflow-hidden cv-card">
                         <div
                             className="grid gap-3 px-4 py-3 text-[9px] uppercase tracking-[0.16em] md:px-6"
-                            style={{ gridTemplateColumns: "34px 1fr 64px", color: C.muted, borderBottom: "1px solid rgba(255,255,255,0.1)" }}
+                            style={{ gridTemplateColumns: "34px 1fr", color: C.muted, borderBottom: "1px solid rgba(255,255,255,0.1)" }}
                         >
                             <span>#</span>
                             <span>Función</span>
-                            <span className="text-right">Peso</span>
                         </div>
 
                         <Stagger stagger={0.04}>
-                            {p.features.map((f, i) => {
-                                const depth = ((i * 37) % 58) + 34;
-                                return (
+                            {p.features.map((f, i) => (
                                     <StaggerItem key={f} y={10}>
                                         <div
                                             className="cv-book-row relative grid items-center gap-3 px-4 py-3 md:px-6"
                                             style={{
-                                                gridTemplateColumns: "34px 1fr 64px",
+                                                gridTemplateColumns: "34px 1fr",
                                                 borderBottom: "1px solid rgba(255,255,255,0.06)",
                                             }}
                                         >
                                             <span
                                                 aria-hidden
-                                                className="absolute inset-y-0 right-0 pointer-events-none"
+                                                className="absolute inset-y-0 right-0 w-1/3 pointer-events-none"
                                                 style={{
-                                                    width: `${depth}%`,
-                                                    background: "linear-gradient(90deg, transparent, rgba(39,179,255,0.12))",
+                                                    background: "linear-gradient(90deg, transparent, rgba(39,179,255,0.10))",
                                                 }}
                                             />
                                             <span className="cv-num relative text-[11px]" style={{ color: C.cyan }}>
@@ -1474,13 +1463,9 @@ const Landing = () => {
                                             <span className="relative text-[13px] leading-relaxed md:text-sm" style={{ color: C.text }}>
                                                 {f}
                                             </span>
-                                            <span className="cv-num relative text-right text-[10px]" style={{ color: C.muted }}>
-                                                {depth},0
-                                            </span>
                                         </div>
                                     </StaggerItem>
-                                );
-                            })}
+                            ))}
                         </Stagger>
                     </div>
                 </div>

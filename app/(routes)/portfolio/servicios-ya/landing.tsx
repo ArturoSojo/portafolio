@@ -279,7 +279,7 @@ const OficioCard = ({
                         {oficio.name}
                     </p>
                     <p className={`sy-ui mt-0.5 text-white/70 ${small ? "text-[8px]" : "text-[9px]"}`}>
-                        ServiciosYa · Higuerote
+                        ServiciosYa · Venezuela
                     </p>
                 </div>
 
@@ -575,9 +575,9 @@ const DESTACADOS = [
     { title: "Reparación eléctrica", a: "4,6 ★", b: "1 h" },
 ];
 const RECIENTES = [
-    { title: "Pintura de fachada", meta: "Higuerote · ayer" },
-    { title: "Destape de tuberías", meta: "Curiepe · hace 2 d" },
-    { title: "Mantenimiento de nevera", meta: "Río Chico · hace 3 d" },
+    { title: "Pintura de fachada", meta: "Caracas · ayer" },
+    { title: "Destape de tuberías", meta: "Maracay · hace 2 d" },
+    { title: "Mantenimiento de nevera", meta: "Valencia · hace 3 d" },
 ];
 
 const MockPanel = () => (
@@ -1635,7 +1635,7 @@ const Landing = () => {
                 style={{ background: AZUL, color: CREMA }}
             >
                 <Marquee
-                    items={OFICIOS.map((o) => o.name).concat(["Higuerote", "Curiepe", "Río Chico", "Contrata u ofrece"])}
+                    items={OFICIOS.map((o) => o.name).concat(["Contrata u ofrece", "Directorio de oficios", "Venezuela"])}
                     speed={38}
                     separator="◆"
                 />

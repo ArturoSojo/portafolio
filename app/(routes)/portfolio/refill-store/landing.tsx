@@ -9,11 +9,23 @@ import { ArrowRight, ChevronRight, Terminal, Zap } from "lucide-react";
 
 import { getProject, nextProject } from "@/data-projects";
 import ProjectShell from "@/components/projects/project-shell";
-import { BrandButton, Chip, CountMetric, Marquee, ProjectOutro, SectionHead } from "@/components/projects/bits";
+import { BrandButton, Chip, CountMetric, Marquee, ProjectOutro, SampleDataNote, SectionHead } from "@/components/projects/bits";
 import { Reveal, Stagger, StaggerItem } from "@/components/projects/reveal";
 
 const p = getProject("refill-store")!;
 const nxt = nextProject("refill-store");
+
+const COIN_LABELS: Record<string, string> = {
+    "diamante-freefire": "Diamantes · Free Fire",
+    "gold-bloodstrike": "Gold · Blood Strike",
+    "pase-elite": "Pase élite",
+};
+
+/** La caption de la ficha describe el archivo; aquí hace falta el nombre del producto. */
+const coinLabel = (src: string) => {
+    const stem = src.split("/").pop()?.replace(/\.svg$/i, "") ?? "";
+    return COIN_LABELS[stem] ?? stem.replace(/[-_]/g, " ");
+};
 
 const iconOf = (name: string): LucideIcon =>
     (Icons as unknown as Record<string, LucideIcon>)[name] ?? Icons.Sparkles;
@@ -567,14 +579,16 @@ const Landing = () => {
                         ))}
                     </div>
 
+                    <SampleDataNote className="mt-8" />
+
                     {coinIcons.length > 0 && (
                         <Reveal className="flex flex-wrap items-center justify-center gap-8 mt-14">
                             {coinIcons.map((coin) => (
                                 <span key={coin.src} className="flex flex-col items-center gap-2 anim-float">
                                     {/* eslint-disable-next-line @next/next/no-img-element */}
                                     <img src={coin.src} alt={coin.caption} className="h-10 w-10" />
-                                    <span className="rs-mono text-[9px] uppercase tracking-[0.16em] opacity-40">
-                                        {coin.caption.replace(/^Icono de moneda:\s*/i, "")}
+                                    <span className="rs-mono text-[9px] uppercase tracking-[0.16em] opacity-60">
+                                        {coinLabel(coin.src)}
                                     </span>
                                 </span>
                             ))}

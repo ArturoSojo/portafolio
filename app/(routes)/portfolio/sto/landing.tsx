@@ -31,7 +31,7 @@ import {
 
 import { getProject, nextProject } from "@/data-projects";
 import ProjectShell from "@/components/projects/project-shell";
-import { BrandButton, Chip, CountMetric, Marquee, ProjectOutro, SectionHead, TiltCard } from "@/components/projects/bits";
+import { BrandButton, Chip, CountMetric, Marquee, ProjectOutro, SampleDataNote, SectionHead, TiltCard } from "@/components/projects/bits";
 import { AutoVideo, BrowserFrame, DragRail, ShotCard } from "@/components/projects/frames";
 import { Reveal, Stagger, StaggerItem } from "@/components/projects/reveal";
 
@@ -1159,7 +1159,9 @@ const Landing = () => {
                         </Reveal>
                     </div>
                 </div>
-            </section>
+            
+                    <SampleDataNote className="mt-8" />
+                </section>
 
             {/* ═══════════════ 7 · GALERÍA REAL (si el catálogo trae media) ═══════════════ */}
             {p.media.length > 0 && (

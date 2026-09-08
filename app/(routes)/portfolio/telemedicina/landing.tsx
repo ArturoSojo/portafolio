@@ -31,7 +31,7 @@ import {
 
 import { getProject, nextProject } from "@/data-projects";
 import ProjectShell from "@/components/projects/project-shell";
-import { BrandButton, Chip, CountMetric, Marquee, ProjectOutro, SectionHead } from "@/components/projects/bits";
+import { BrandButton, Chip, CountMetric, Marquee, ProjectOutro, SampleDataNote, SectionHead } from "@/components/projects/bits";
 import { BrowserFrame } from "@/components/projects/frames";
 import { Reveal, RevealWords, Stagger, StaggerItem } from "@/components/projects/reveal";
 
@@ -1447,7 +1447,9 @@ const Landing = () => {
                         </Reveal>
                     )}
                 </div>
-            </section>
+            
+                    <SampleDataNote className="mt-8" />
+                </section>
 
             {/* ─────────────── HOJA DE EXPLORACIÓN: funcionalidades ─────────────── */}
             <section className="relative z-10 px-4 py-20 md:px-6 md:py-28" style={{ color: INK }}>

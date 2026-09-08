@@ -640,7 +640,7 @@ const Landing = () => {
                                     Lado A · el problema
                                 </p>
                                 <h3 className="mt-3 text-xl font-bold text-white md:text-2xl">
-                                    Cuatro apps para una sola comunidad
+                                    Tres canales para una sola comunidad
                                 </h3>
                                 <p className="mt-4 text-sm leading-relaxed text-white/70 md:text-base">{p.problem}</p>
                             </div>
@@ -1005,7 +1005,7 @@ const Landing = () => {
                         index="08 / Equipación"
                         title={
                             <>
-                                78 dependencias, <span className="brand-gradient-text">seis bolsas</span>
+                                78 dependencias, <span className="brand-gradient-text">siete bolsas</span>
                             </>
                         }
                     />

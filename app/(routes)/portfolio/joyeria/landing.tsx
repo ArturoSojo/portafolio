@@ -26,7 +26,7 @@ import {
 
 import { getProject, nextProject } from "@/data-projects";
 import ProjectShell from "@/components/projects/project-shell";
-import { BrandButton, Chip, CountMetric, Magnetic, Marquee, ProjectOutro, SectionHead } from "@/components/projects/bits";
+import { BrandButton, Chip, CountMetric, Magnetic, Marquee, ProjectOutro, SampleDataNote, SectionHead } from "@/components/projects/bits";
 import { Reveal, RevealWords, Stagger, StaggerItem } from "@/components/projects/reveal";
 import { AutoVideo, BrowserFrame, DragRail, PhoneFrame, ShotCard } from "@/components/projects/frames";
 
@@ -1391,7 +1391,9 @@ const Landing = () => {
                         </div>
                     </Reveal>
                 </div>
-            </section>
+            
+                    <SampleDataNote className="mt-8" />
+                </section>
 
             {/* ───────────────── 8 · GALERÍA REAL ───────────────── */}
             {galleryMedia.length > 0 && (
