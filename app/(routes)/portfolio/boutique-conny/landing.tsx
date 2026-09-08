@@ -1193,7 +1193,7 @@ const Landing = () => {
             />
 
             {/* ═════════════════════════ HERO · LA VITRINA ═════════════════════════ */}
-            <section className="bc-thread relative px-4 pt-28 pb-20 md:px-6 md:pt-32 md:pb-28">
+            <section className="relative px-4 pt-28 pb-20 overflow-hidden md:px-6 md:pt-32 md:pb-28">
                 <span
                     aria-hidden
                     className="absolute inset-0"
@@ -1206,7 +1206,12 @@ const Landing = () => {
                     className="absolute inset-0"
                     style={{ background: `radial-gradient(60% 45% at 50% 34%, rgba(236,127,155,0.10), transparent 72%)` }}
                 />
-                <span aria-hidden className="absolute inset-x-0 bottom-0 h-px" style={{ background: "rgba(201,163,90,0.25)" }} />
+                {/* el riel de la vitrina: un hilo dorado que recorre el borde inferior */}
+                <span
+                    aria-hidden
+                    className="bc-thread absolute inset-x-0 bottom-0 h-px"
+                    style={{ background: "rgba(201,163,90,0.25)" }}
+                />
 
                 <div className="relative max-w-5xl mx-auto">
                     <Reveal direction="scale" duration={1}>

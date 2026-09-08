@@ -1178,7 +1178,7 @@ const Landing = () => {
                 />
 
                 <div className="relative grid max-w-6xl gap-12 mx-auto lg:grid-cols-[1.05fr_1fr] lg:items-center">
-                    <div>
+                    <div className="min-w-0">
                         <p className="vt-mono text-[11px] uppercase tracking-[0.3em] text-[#60a5fa]">
                             05:30 · antes del primer relevo
                         </p>
@@ -1260,7 +1260,7 @@ const Landing = () => {
                         )}
                     </div>
 
-                    <div className="relative">
+                    <div className="relative min-w-0">
                         <div className="flex items-center justify-between mb-4">
                             <span className="vt-mono text-[10px] uppercase tracking-[0.24em] text-slate-500">
                                 Riel de fichaje · 01/04/2026
@@ -1420,7 +1420,7 @@ const Landing = () => {
                             </p>
                         </Reveal>
 
-                        <div className="vt-lanes space-y-3">
+                        <div className="vt-lanes min-w-0 space-y-3">
                             {ROLES.map((rol, i) => {
                                 const Icon = iconOf(rol.icon);
                                 const t = DARK_TONE[rol.tone];
@@ -1547,7 +1547,7 @@ const Landing = () => {
                     </div>
 
                     <div className="grid gap-8 mt-16 lg:grid-cols-[1fr_460px] lg:items-center">
-                        <div>
+                        <div className="min-w-0">
                             <h3 className="text-xl font-bold text-white md:text-2xl">
                                 El modal que dibuja el expediente completo
                             </h3>
@@ -1571,7 +1571,7 @@ const Landing = () => {
                             </p>
                         </div>
 
-                        <Reveal direction="left">
+                        <Reveal direction="left" className="min-w-0">
                             <MockDetalle />
                         </Reveal>
                     </div>
@@ -1827,8 +1827,8 @@ const Landing = () => {
                     />
 
                     <div className="grid gap-6 mt-12 lg:grid-cols-[1fr_1fr] lg:items-start">
-                        <Reveal direction="right">
-                            <div className="overflow-hidden rounded-[10px] bg-[#0f172a] shadow-[0_24px_60px_-30px_rgba(15,23,42,0.9)]">
+                        <Reveal direction="right" className="min-w-0">
+                            <div className="min-w-0 overflow-hidden rounded-[10px] bg-[#0f172a] shadow-[0_24px_60px_-30px_rgba(15,23,42,0.9)]">
                                 <div className="flex items-center gap-2 border-b border-white/10 px-4 py-2.5">
                                     <span className="h-2 w-2 rounded-full bg-[#f87171]" />
                                     <span className="h-2 w-2 rounded-full bg-[#fbbf24]" />
@@ -1857,7 +1857,7 @@ const Landing = () => {
                             </div>
                         </Reveal>
 
-                        <Reveal direction="left" delay={0.1}>
+                        <Reveal direction="left" delay={0.1} className="min-w-0">
                             <div className="p-5 bg-white vt-card md:p-7">
                                 <p className="text-[13px] leading-relaxed text-[#334155] md:text-[14px]">{p.architecture}</p>
                             </div>
