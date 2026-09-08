@@ -553,14 +553,14 @@ const MockAsset = () => {
     const line = sparkPath([28, 34, 31, 39, 45, 41, 50, 56, 52, 61, 68, 64, 73, 80, 76, 88], 240, 74);
     return (
         <div
-            className="flex h-full flex-col gap-2 overflow-hidden px-3 pt-9 pb-3"
+            className="flex h-full flex-col gap-1 overflow-hidden px-3 pt-8 pb-2"
             style={{ background: "linear-gradient(165deg,#0B1220 0%,#0E1F3C 60%,#091225 100%)" }}
         >
             {/* cabecera del activo */}
-            <div className="flex items-center gap-2.5 p-3 cv-card" style={{ borderRadius: 18 }}>
+            <div className="flex items-center gap-2.5 p-2.5 cv-card" style={{ borderRadius: 18 }}>
                 <span
-                    className="grid place-items-center text-[11px] font-bold text-white shrink-0"
-                    style={{ height: 42, width: 42, borderRadius: 14, backgroundImage: C.grad }}
+                    className="grid place-items-center text-[10px] font-bold text-white shrink-0"
+                    style={{ height: 38, width: 38, borderRadius: 13, backgroundImage: C.grad }}
                 >
                     BTC
                 </span>
@@ -575,7 +575,7 @@ const MockAsset = () => {
             </div>
 
             {/* precio */}
-            <div className="p-3 cv-card" style={{ borderRadius: 18 }}>
+            <div className="p-2.5 cv-card" style={{ borderRadius: 18 }}>
                 <p className="text-[9px]" style={{ color: C.muted }}>
                     Precio actual
                 </p>
@@ -596,15 +596,15 @@ const MockAsset = () => {
             </div>
 
             {/* gráfico 1 h */}
-            <div className="p-3 cv-card" style={{ borderRadius: 18 }}>
+            <div className="p-2.5 cv-card" style={{ borderRadius: 18 }}>
                 <p className="text-[10px] font-semibold" style={{ color: C.text }}>
                     Gráfico de precio (1h)
                 </p>
                 <div
-                    className="mt-2 overflow-hidden"
-                    style={{ height: 88, borderRadius: 16, background: "rgba(27,49,92,0.6)" }}
+                    className="mt-1.5 overflow-hidden"
+                    style={{ height: 54, borderRadius: 16, background: "rgba(27,49,92,0.6)" }}
                 >
-                    <svg viewBox="0 0 240 74" preserveAspectRatio="none" className="w-full" style={{ height: 88 }}>
+                    <svg viewBox="0 0 240 74" preserveAspectRatio="none" className="w-full" style={{ height: 54 }}>
                         <defs>
                             <linearGradient id="cv-asset-fill" x1="0" y1="0" x2="0" y2="1">
                                 <stop offset="0%" stopColor={C.up} stopOpacity="0.35" />
@@ -618,18 +618,18 @@ const MockAsset = () => {
             </div>
 
             {/* estadísticas */}
-            <div className="p-3 cv-card" style={{ borderRadius: 18 }}>
+            <div className="p-2.5 cv-card" style={{ borderRadius: 18 }}>
                 <p className="text-[10px] font-semibold" style={{ color: C.text }}>
                     Estadísticas del activo
                 </p>
-                <div className="mt-1.5">
+                <div className="mt-1">
                     {[
                         ["Cap. Mercado", "$1,33 B"],
                         ["Volumen 24h", "$28,4 B"],
                         ["Precio Apertura", "$65.894,20"],
                         ["Dominio estimado", "54,2 %"],
                     ].map(([k, v]) => (
-                        <div key={k} className="flex items-center justify-between py-0.5">
+                        <div key={k} className="flex items-center justify-between py-px">
                             <span className="text-[9px]" style={{ color: C.muted }}>
                                 {k}
                             </span>
@@ -642,11 +642,11 @@ const MockAsset = () => {
             </div>
 
             {/* trading */}
-            <div className="p-3 cv-card" style={{ borderRadius: 18 }}>
+            <div className="p-2.5 cv-card" style={{ borderRadius: 18 }}>
                 <p className="text-[10px] font-semibold" style={{ color: C.text }}>
                     Trading
                 </p>
-                <div className="grid grid-cols-2 gap-2 mt-2">
+                <div className="grid grid-cols-2 gap-2 mt-1.5">
                     <span
                         className="py-1.5 text-center text-[10px] font-semibold text-white"
                         style={{ borderRadius: 14, backgroundImage: "linear-gradient(135deg,#2ECC71,#1E8F52)" }}
@@ -661,7 +661,7 @@ const MockAsset = () => {
                     </span>
                 </div>
                 <div
-                    className="mt-2 px-3 py-2 text-[10px]"
+                    className="mt-1.5 px-3 py-1.5 text-[10px]"
                     style={{ background: C.field, borderRadius: 14, color: C.text }}
                 >
                     <span className="cv-num">0,0125</span>
@@ -669,13 +669,13 @@ const MockAsset = () => {
                         BTC
                     </span>
                 </div>
-                <div className="mt-1.5">
+                <div className="mt-1">
                     {[
                         ["Precio", "$67.482,10"],
                         ["Total", "$843,53"],
                         ["Disponible", "$4.120,00 USDT"],
                     ].map(([k, v]) => (
-                        <div key={k} className="flex items-center justify-between py-0.5">
+                        <div key={k} className="flex items-center justify-between py-px">
                             <span className="text-[9px]" style={{ color: C.muted }}>
                                 {k}
                             </span>
@@ -686,7 +686,7 @@ const MockAsset = () => {
                     ))}
                 </div>
                 <div
-                    className="mt-2 flex items-center justify-center gap-1.5 py-2 text-[10px] font-semibold text-white"
+                    className="mt-1.5 flex items-center justify-center gap-1.5 py-2 text-[10px] font-semibold text-white"
                     style={{ borderRadius: 14, backgroundImage: C.grad }}
                 >
                     <ShoppingCart size={12} /> Comprar
@@ -699,7 +699,7 @@ const MockAsset = () => {
 /** uiScreens[3] — Portafolio */
 const MockPortfolio = () => (
     <div
-        className="flex h-full flex-col gap-2.5 overflow-hidden px-3 pt-9 pb-3"
+        className="flex h-full flex-col gap-2.5 overflow-hidden px-3 pt-8 pb-3"
         style={{ background: "linear-gradient(165deg,#0B1220 0%,#0E1F3C 60%,#091225 100%)" }}
     >
         <div
@@ -801,7 +801,7 @@ const MockPortfolio = () => (
 /** uiScreens[4] — Historial de operaciones */
 const MockHistory = () => (
     <div
-        className="flex h-full flex-col gap-2.5 overflow-hidden px-3 pt-9 pb-3"
+        className="flex h-full flex-col gap-2.5 overflow-hidden px-3 pt-8 pb-3"
         style={{ background: "linear-gradient(165deg,#0B1220 0%,#0E1F3C 60%,#091225 100%)" }}
     >
         <div className="p-3 cv-card" style={{ borderRadius: 20 }}>
@@ -936,7 +936,7 @@ const CandleWall = () => {
                                 </span>
                                 <span
                                     className={`flex w-full flex-col items-center ${inView ? "cv-candle" : ""}`}
-                                    style={{ animationDelay: `${i * 80}ms`, opacity: inView ? 1 : 0 }}
+                                    style={{ animationDelay: `${i * 80}ms` }}
                                 >
                                     <span style={{ width: 2, height: c.wick, background: "rgba(39,179,255,0.55)" }} />
                                     <span

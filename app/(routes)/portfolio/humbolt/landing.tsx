@@ -14,7 +14,6 @@ import {
     CheckCircle2,
     ChevronRight,
     Clock,
-    Eye,
     EyeOff,
     Filter,
     GitBranch,
@@ -1213,7 +1212,7 @@ const Landing = () => {
             </section>
 
             {/* ═════════════════════════ 4 · LA SOLUCIÓN ═════════════════════════ */}
-            <section className="relative px-4 py-20 md:px-6 md:py-28" style={{ background: "#F8F9FA", color: "#003153" }}>
+            <section className="relative px-4 py-20 overflow-hidden md:px-6 md:py-28" style={{ background: "#F8F9FA", color: "#003153" }}>
                 <div className="max-w-6xl mx-auto">
                     <SectionHead
                         index="02 / La solución"
@@ -1486,18 +1485,15 @@ const Landing = () => {
             <section className="relative px-4 py-20 overflow-hidden md:px-6 md:py-28" style={{ background: "#003153", color: "#FFFFFF" }}>
                 <div aria-hidden className="absolute inset-0 hb-grid--dark opacity-70" />
                 <div aria-hidden className="absolute inset-0 overflow-hidden">
-                    {EVENTS.map((e, i) => (
-                        <span
-                            key={e.type}
-                            className="hb-beam"
-                            style={{
-                                left: `${16 + i * 22}%`,
-                                background: `linear-gradient(to bottom, ${e.color}, transparent)`,
-                                boxShadow: `0 0 24px ${e.color}`,
-                                ["--d" as string]: `${i * 900}ms`,
-                            }}
-                        />
-                    ))}
+                    {EVENTS.map((e, i) => {
+                        const beam: React.CSSProperties & Record<string, string | number> = {
+                            left: `${16 + i * 22}%`,
+                            background: `linear-gradient(to bottom, ${e.color}, transparent)`,
+                            boxShadow: `0 0 24px ${e.color}`,
+                            ["--d"]: `${i * 900}ms`,
+                        };
+                        return <span key={e.type} className="hb-beam" style={beam} />;
+                    })}
                 </div>
 
                 <div className="relative max-w-5xl mx-auto">
@@ -1649,7 +1645,7 @@ const Landing = () => {
                             <Reveal key={layer.name} delay={i * 0.08} direction="right">
                                 <div className="flex items-start gap-4 md:gap-6">
                                     <span
-                                        className="relative z-10 grid rounded-lg h-13 w-13 shrink-0 place-items-center"
+                                        className="relative z-10 grid rounded-lg shrink-0 place-items-center"
                                         style={{
                                             width: 52,
                                             height: 52,

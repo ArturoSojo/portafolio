@@ -216,7 +216,7 @@ const css = `
 .pt-wedge {
   position: absolute;
   inset: 0;
-  clip-path: polygon(38% 0, 100% 0, 100% 100%, 20% 100%);
+  clip-path: polygon(48% 0, 100% 0, 100% 100%, 33% 100%);
   background:
     radial-gradient(120% 90% at 100% 0%, rgba(15,121,238,0.16), transparent 62%),
     linear-gradient(135deg, rgba(15,121,238,0.10) 0%, rgba(15,88,238,0.07) 52%, rgba(235,202,0,0.12) 100%);
@@ -225,9 +225,9 @@ const css = `
 .pt-wedge-edge {
   position: absolute;
   inset: 0;
-  clip-path: polygon(38% 0, 38.35% 0, 20.35% 100%, 20% 100%);
+  clip-path: polygon(48% 0, 48.3% 0, 33.3% 100%, 33% 100%);
   background: #EBCA00;
-  opacity: 0.85;
+  opacity: 0.7;
   pointer-events: none;
 }
 .pt-dots {

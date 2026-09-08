@@ -658,8 +658,8 @@ const MockInicio = () => (
 
 /** uiScreens[2] — Ficha de producto */
 const MockFicha = () => (
-    <div className="ax-mock relative h-full w-full overflow-hidden bg-white">
-        <div className="relative h-[150px] w-full overflow-hidden">
+    <div className="ax-mock relative flex h-full w-full flex-col overflow-hidden bg-white">
+        <div className="relative h-[150px] w-full shrink-0 overflow-hidden">
             <Producto {...CATALOGO[0]} />
             <span
                 aria-hidden
@@ -719,7 +719,7 @@ const MockFicha = () => (
             ))}
         </div>
 
-        <div className="mt-2 px-4">
+        <div className="mt-auto px-4 pb-8">
             <p className="text-[6px] uppercase tracking-[0.18em] text-[#9AA5B4]">Reseña destacada</p>
             <div className="mt-1 rounded-[5px] bg-[#F8F8F8] p-2">
                 <div className="flex items-center gap-1.5">
@@ -865,12 +865,43 @@ const MockPerfil = () => (
     </div>
 );
 
+/* Los rótulos de cartela los escribo yo; los describe de uiScreens son guía visual, no texto a imprimir. */
 const MAQUETAS = [
-    { screen: 0, node: <MockBienvenida />, nota: "Acceso · modales al 85 %" },
-    { screen: 1, node: <MockInicio />, nota: "Portada · cinco pestañas" },
-    { screen: 2, node: <MockFicha />, nota: "Detalle · IndexedStack" },
-    { screen: 3, node: <MockExplorar />, nota: "Descubrimiento · Wrap de 6" },
-    { screen: 4, node: <MockPerfil />, nota: "Cuenta · plan premium" },
+    {
+        screen: 0,
+        node: <MockBienvenida />,
+        nota: "Acceso · modales al 85 %",
+        label:
+            "Fondo a sangre en azul noche con el logotipo circular flotando y la marca en versalitas anchas. Abajo, dos botones de 60 px: relleno azul con texto crema para registrarse, contorno crema para entrar. Cualquiera de los dos levanta un modal blanco que cubre el 85 % de la pantalla.",
+    },
+    {
+        screen: 1,
+        node: <MockInicio />,
+        nota: "Portada · cinco pestañas",
+        label:
+            "Cabecera azul de 245 px con la marca y el avatar, buscador falso con botón de filtros crema y tres bandas: los más vendidos en tarjetas de 180 × 220 con cartela desenfocada, los de alto rendimiento y los vendidos recientemente. La barra inferior flota sobre un degradado cian.",
+    },
+    {
+        screen: 2,
+        node: <MockFicha />,
+        nota: "Detalle · IndexedStack",
+        label:
+            "Imagen de 280 px bajo un encabezado transparente que se vuelve azul en cuanto el scroll pasa de 2 píxeles. Debajo, bloque azul con métricas y descripción, franja crema de tres pestañas y el contenido colgando de un IndexedStack.",
+    },
+    {
+        screen: 3,
+        node: <MockExplorar />,
+        nota: "Descubrimiento · Wrap de 6",
+        label:
+            "Bloque azul de 245 px con seis categorías en mosaico separadas 16 px, tarjeta destacada a todo el ancho sobre blanco y un carril de recomendaciones idéntico al de la portada.",
+    },
+    {
+        screen: 4,
+        node: <MockPerfil />,
+        nota: "Cuenta · plan premium",
+        label:
+            "Avatar de 130 px sobre la cabecera azul con la fila para cambiar la foto, y cuatro fichas de datos sobre blanco. La del tipo de suscripción se resalta en crema para marcar el plan premium.",
+    },
 ];
 
 /* ───────────────────────────── Landing ───────────────────────────── */
@@ -880,7 +911,7 @@ const Landing = () => {
     const video = p.media.find((m: { kind: string }) => m.kind === "video");
 
     return (
-        <ProjectShell name={p.name} brand={p.brand} links={p.links} className="ax-wall">
+        <ProjectShell name={p.name} brand={p.brand} links={p.links}>
             <style>{css}</style>
 
             {/* Paredes de la sala: veladura de lucernario y grano de pintura */}
@@ -1156,7 +1187,7 @@ const Landing = () => {
                                     <Cartela
                                         side={i === 0 ? "l" : "r"}
                                         title={p.uiScreens[m.screen].name}
-                                        body={p.uiScreens[m.screen].describe.split(". ").slice(0, 3).join(". ") + "."}
+                                        body={m.label}
                                         tech={`${m.nota} · Flutter · ${p.year}`}
                                         className="mx-auto max-w-[340px]"
                                     />
@@ -1178,7 +1209,7 @@ const Landing = () => {
                                     <Cartela
                                         side="l"
                                         title={p.uiScreens[m.screen].name}
-                                        body={p.uiScreens[m.screen].describe.split(". ").slice(0, 2).join(". ") + "."}
+                                        body={m.label}
                                         tech={m.nota}
                                         className="mt-6"
                                     />
@@ -1379,7 +1410,7 @@ const Landing = () => {
             {/* ═══════════════ PALETA DE LA SALA ═══════════════ */}
             <section className="relative z-10 px-4 py-20 md:px-6 md:py-24">
                 <div className="max-w-5xl mx-auto">
-                    <SectionHead index="Paleta de sala" title="Los colores de la exposición" />
+                    <SectionHead index="Paleta de sala" title="Los colores de la exposición" lead={p.brand.mood} />
 
                     <Reveal className="mt-10">
                         <div className="grid grid-cols-2 gap-3 md:grid-cols-6">
