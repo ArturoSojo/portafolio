@@ -26,7 +26,7 @@ export const Chip = ({ children, className }: { children: React.ReactNode; class
  * en la sección de métricas.
  */
 export const SampleDataNote = ({ className }: { className?: string }) => (
-    <p className={`inline-flex items-center gap-1.5 text-[11px] opacity-50 ${className ?? ""}`}>
+    <p className={`inline-flex items-center gap-1.5 text-[11px] opacity-70 ${className ?? ""}`}>
         <Info size={12} aria-hidden />
         Las maquetas reproducen la interfaz real; los datos que muestran son de ejemplo.
     </p>
@@ -46,10 +46,10 @@ export const SectionHead = ({
 }) => (
     <div className={`max-w-2xl ${align === "center" ? "mx-auto text-center" : ""}`}>
         {index && (
-            <span className="block mb-3 text-xs font-mono tracking-[0.4em] uppercase opacity-45">{index}</span>
+            <span className="block mb-3 text-xs font-mono tracking-[0.4em] uppercase opacity-70">{index}</span>
         )}
         <h2 className="text-3xl font-bold leading-tight md:text-5xl">{title}</h2>
-        {lead && <p className="mt-4 text-base leading-relaxed opacity-70 md:text-lg">{lead}</p>}
+        {lead && <p className="mt-4 text-base leading-relaxed opacity-85 md:text-lg">{lead}</p>}
     </div>
 );
 
@@ -98,7 +98,7 @@ export const CountMetric = ({ value, label }: { value: string; label: string }) 
     return (
         <div ref={ref}>
             <p className="text-3xl font-extrabold md:text-5xl brand-gradient-text">{text}</p>
-            <p className="mt-2 text-xs uppercase tracking-[0.18em] opacity-55">{label}</p>
+            <p className="mt-2 text-xs uppercase tracking-[0.18em] opacity-75">{label}</p>
         </div>
     );
 };
@@ -272,11 +272,11 @@ export const ProjectOutro = ({
                     style={{ backgroundImage: "var(--brand-gradient)" }}
                 />
                 <div className="relative">
-                    <p className="text-xs uppercase tracking-[0.32em] opacity-55">{name}</p>
+                    <p className="text-xs uppercase tracking-[0.32em] opacity-75">{name}</p>
                     <h2 className="max-w-xl mt-4 text-3xl font-bold leading-tight md:text-5xl">
                         ¿Quieres algo así <span className="brand-gradient-text">para tu producto?</span>
                     </h2>
-                    {note && <p className="max-w-xl mt-4 text-sm leading-relaxed opacity-70">{note}</p>}
+                    {note && <p className="max-w-xl mt-4 text-sm leading-relaxed opacity-85">{note}</p>}
 
                     <div className="flex flex-wrap gap-3 mt-8">
                         {links?.play && (
@@ -313,7 +313,7 @@ export const ProjectOutro = ({
                     </div>
 
                     <div className="flex flex-wrap items-center justify-between gap-4 pt-8 mt-12 border-t border-white/10">
-                        <Link href="/portfolio" className="text-sm transition-opacity opacity-60 hover:opacity-100">
+                        <Link href="/portfolio" className="text-sm transition-opacity opacity-80 hover:opacity-100">
                             ← Todos los proyectos
                         </Link>
                         {nextSlug && nextName && (
@@ -321,7 +321,7 @@ export const ProjectOutro = ({
                                 href={`/portfolio/${nextSlug}`}
                                 className="inline-flex items-center gap-2 text-sm font-semibold transition-transform group hover:translate-x-1"
                             >
-                                <span className="opacity-60">Siguiente</span>
+                                <span className="opacity-80">Siguiente</span>
                                 <span className="brand-gradient-text">{nextName}</span>
                                 <ArrowRight size={16} className="transition-transform group-hover:translate-x-1" />
                             </Link>

@@ -296,7 +296,7 @@ const Sheet = ({
                 <div className={`relative px-5 pt-10 pb-16 sm:px-8 md:px-14 md:pt-14 md:pb-20 ${inner ?? ""}`}>
                     {children}
                 </div>
-                <span className="nb-mono nb-caps absolute bottom-5 right-6 text-[9px] text-[#F2F4FF]/30 md:right-10">
+                <span className="nb-mono nb-caps absolute bottom-5 right-6 text-[9px] text-[#F2F4FF]/55 md:right-10">
                     {chapter} · {folio}
                 </span>
             </div>
@@ -894,11 +894,11 @@ const Landing = () => {
                             )}
                         </div>
 
-                        <p className="nb-mono nb-caps mt-10 text-[9px] text-[#F2F4FF]/25">
+                        <p className="nb-mono nb-caps mt-10 text-[9px] text-[#F2F4FF]/60">
                             Pasa página con ← → o baja
                         </p>
                     </div>
-                    <span className="nb-mono nb-caps absolute bottom-5 right-6 text-[9px] text-[#F2F4FF]/30 md:right-10">
+                    <span className="nb-mono nb-caps absolute bottom-5 right-6 text-[9px] text-[#F2F4FF]/55 md:right-10">
                         Portadilla · 01
                     </span>
                 </div>
@@ -981,7 +981,7 @@ const Landing = () => {
                                         <span className="grid h-10 w-10 shrink-0 place-items-center rounded-full border border-[#6C4DF4]/[0.35] bg-[#6C4DF4]/[0.12] text-[#B7A5FF] transition-colors duration-500 group-hover:border-[#22D3EE]/60 group-hover:text-[#22D3EE]">
                                             <Icon size={18} />
                                         </span>
-                                        <span className="nb-mono nb-caps text-[10px] text-[#F2F4FF]/30">
+                                        <span className="nb-mono nb-caps text-[10px] text-[#F2F4FF]/55">
                                             {String(i + 1).padStart(2, "0")}
                                         </span>
                                     </div>
@@ -1021,7 +1021,7 @@ const Landing = () => {
                                         : "border-white/[0.08] bg-white/[0.02] hover:border-white/20"
                                 }`}
                             >
-                                <span className="nb-mono nb-caps block text-[9px] text-[#F2F4FF]/30">
+                                <span className="nb-mono nb-caps block text-[9px] text-[#F2F4FF]/55">
                                     {String(i + 1).padStart(2, "0")}
                                 </span>
                                 <span
@@ -1390,7 +1390,7 @@ const Landing = () => {
                                     style={{ background: hex }}
                                 />
                                 <p className="nb-mono mt-2 text-[10px] text-[#F2F4FF]/70">{hex}</p>
-                                <p className="nb-mono nb-caps text-[8px] text-[#F2F4FF]/30">{name}</p>
+                                <p className="nb-mono nb-caps text-[8px] text-[#F2F4FF]/55">{name}</p>
                             </div>
                         ))}
                     </div>

@@ -85,13 +85,13 @@ export const ProjectTopBar = ({ name, links }: { name: string; links?: ProjectLi
             <Link
                 href="/portfolio"
                 aria-label="Volver a todos los proyectos"
-                className="inline-flex items-center gap-2 text-sm transition-colors opacity-80 hover:opacity-100 shrink-0"
+                className="inline-flex items-center gap-2 text-sm transition-colors opacity-90 hover:opacity-100 shrink-0"
             >
                 <ArrowLeft size={16} />
                 <span className="hidden sm:inline">Proyectos</span>
             </Link>
 
-            <span className="text-xs font-semibold tracking-[0.28em] uppercase truncate opacity-60">{name}</span>
+            <span className="text-xs font-semibold tracking-[0.28em] uppercase truncate opacity-80">{name}</span>
 
             <div className="flex items-center gap-2 shrink-0">
                 {links?.play && (
