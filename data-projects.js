@@ -2504,42 +2504,42 @@ export const projects = [
     "categoryShort": "App móvil",
     "media": [
       {
-        "src": "/Proyectos/cliff_pickleball/Screenshot_20250105-102613.png",
+        "src": "/proyectos/cliff_pickleball/Screenshot_20250105-102613.png",
         "kind": "screenshot",
         "caption": "Splash azul #0152CD con el isotipo naranja sobre placa blanca y el nombre CliffPickleball en blanco"
       },
       {
-        "src": "/Proyectos/cliff_pickleball/Screenshot_20250105-102621.png",
+        "src": "/proyectos/cliff_pickleball/Screenshot_20250105-102621.png",
         "kind": "screenshot",
         "caption": "Pantalla de inicio en modo oscuro con buscador, sección Activities y lista de Messages"
       },
       {
-        "src": "/Proyectos/cliff_pickleball/Screenshot_20250105-102630.png",
+        "src": "/proyectos/cliff_pickleball/Screenshot_20250105-102630.png",
         "kind": "screenshot",
         "caption": "Connection Management con las pestañas Available, Incoming y Sent y estado vacío Not Found"
       },
       {
-        "src": "/Proyectos/cliff_pickleball/Screenshot_20250105-102635.png",
+        "src": "/proyectos/cliff_pickleball/Screenshot_20250105-102635.png",
         "kind": "screenshot",
         "caption": "Ajustes en modo oscuro: App theme, Profile, Settings, Chat WallPaper, Chat History, Storage, Support, About e Invite a Friend"
       },
       {
-        "src": "/Proyectos/cliff_pickleball/Screenshot_20250105-102641.png",
+        "src": "/proyectos/cliff_pickleball/Screenshot_20250105-102641.png",
         "kind": "screenshot",
         "caption": "Los mismos ajustes en modo claro con el selector de tema desplegado: System, Dark y Light Theme"
       },
       {
-        "src": "/Proyectos/cliff_pickleball/Screenshot_20250105-102647.png",
+        "src": "/proyectos/cliff_pickleball/Screenshot_20250105-102647.png",
         "kind": "screenshot",
         "caption": "Perfil con avatar circular de borde verde, botón de cámara y campos Name, About y Email editables"
       },
       {
-        "src": "/Proyectos/cliff_pickleball/Screenshot_20250105-102654.png",
+        "src": "/proyectos/cliff_pickleball/Screenshot_20250105-102654.png",
         "kind": "screenshot",
         "caption": "Ajustes internos con el interruptor de notificaciones en primer plano y en segundo plano"
       },
       {
-        "src": "/Proyectos/cliff_pickleball/Screenshot_20250105-102817.png",
+        "src": "/proyectos/cliff_pickleball/Screenshot_20250105-102817.png",
         "kind": "screenshot",
         "caption": "Pantalla About explicando el cifrado de mensajes y actividades, con títulos en verde sobre fondo #15162D"
       }
@@ -3590,7 +3590,13 @@ export const projects = [
     "visualConcept": "«Cámara frigorífica»: la landing se comporta como la cava de la planta. Empieza cerrada, se abre, la escarcha va cediendo a medida que uno baja y un termómetro en el margen marca en qué zona térmica está el visitante. La identidad es la del proyecto real —azul petróleo #0E4C5A y #14707A sobre casi negro #081113, con el naranja del sol #F49021 como única alarma— y jamás aparece un tono entre 260° y 330°, porque el proyecto prohíbe el lila por escrito.\n\nApertura. El primer viewport es una puerta de cava a pantalla completa: dos hojas de #16242A con junta perimetral de goma más oscura, remaches, un bisel de 2 px en #2B3F46 y una manija de acero cepillado horizontal. Sobre ellas, escarcha real dibujada en SVG —ramas dendríticas blancas al 6 %— y una placa de identificación con «CAVA-1 · −18,0 °C» en cifras tabulares. Al cargar, las hojas se separan hacia los lados con transform translateX de ±52 % en 900 ms y curva cubic-bezier(.16,1,.3,1), soltando una nube de vapor frío (dos capas con blur de 18 px y opacidad 0 → 0,5 → 0 en 1,4 s) que se disipa hacia abajo y descubre el hero. Detrás aparece el logo animado tal como lo pinta la app: seis ondas de mar en degradado de #5EC1BC a #1B3F4A desplazándose en bucle de 6 s y un sol que sube del 72 % al 30 % de la caja con halo naranja. Titular en Sora negra: «Cadena de frío que sí emite el PDF». Subtítulo en Inter y dos chips de estado con punto luminoso: «Offline-first» y «Plan gratuito, sin Cloud Functions».\n\nTermómetro-guía. Fijo en el margen izquierdo, un tubo vertical de 6 px con bulbo abajo y escala de marcas cada 40 px. La columna se rellena con un degradado que va de #6FD3E0 a #F49021 en proporción al scroll, y una etiqueta flotante muestra la temperatura de la sección en la que está el lector. Las secciones se nombran con las cavas reales de la semilla del proyecto: TUNEL-1 (−35 °C) para la arquitectura más dura, CAVA-1 (−18 °C) para el núcleo operativo, CAVA-2 (0–4 °C) para las pantallas, ANTESALA (8–12 °C) para métricas y plan, y el cierre ya a temperatura ambiente. Al cruzar cada umbral, la etiqueta hace un micro-parpadeo y la escarcha del fondo pierde un 20 % de opacidad: la página literalmente se descongela mientras se lee.\n\nSuperficies. Cada tarjeta es una superficie fría: fondo #16242A, borde 1 px #2B3F46, y en las dos esquinas superiores un gradiente radial blanco al 8 % que simula el hielo acumulado. Al pasar el cursor, ese hielo se funde en 320 ms —la opacidad del radial baja a 0— el borde vira a #6FD3E0 y aparece una gota de condensación que resbala 12 px. Los números de las métricas usan font-feature-settings 'tnum' y suben con un contador; junto a los que son cero (las Cloud Functions) se pinta una insignia naranja de «fuera de lo esperado, y a propósito».\n\nSecciones. 1) Puerta y hero. 2) «Lo que no salía»: tres tarjetas de fallo del sistema anterior con el borde izquierdo naranja, escritas como partes de avería. 3) «Sin servidor»: diagrama en SVG de las compensaciones —reglas, transacciones, cómputo en cliente, scripts locales— con las flechas dibujándose por stroke-dashoffset al entrar en pantalla. 4) «Pantallas reales»: los mockups de splash, login, panel y cascarón dentro de marcos de teléfono con el degradado marino auténtico, y un conmutador claro/oscuro que cambia los cuatro a la vez. 5) «Decisiones a −18 °C»: los retos como fichas de lectura de termómetro, con el problema en la parte fría y la solución en la parte templada de cada ficha. 6) «Once fases»: línea de tiempo vertical dibujada como tubería de refrigeración con codos, escarcha en los tramos ya hechos y tubo desnudo en los pendientes. 7) Cierre: las dos hojas de la puerta vuelven a juntarse al llegar al pie, dejando entre ellas una rendija de luz con el CTA.\n\nMovimiento y accesibilidad. Toda la animación pasa por un único conjunto de variables de duración, y bajo prefers-reduced-motion la puerta arranca ya abierta, el vapor no existe, las ondas quedan quietas en su fotograma final y el termómetro deja de interpolar: se limita a saltar de sección en sección. Tipografía Sora para títulos e Inter para texto y cifras, exactamente las dos familias que usa la aplicación.",
     "statusShort": "En desarrollo",
     "categoryShort": "App móvil",
-    "media": []
+    "media": [
+      {
+        "src": "/proyectos/sistema-cavas/WhatsApp-Image-2026-09-06-at-20.37.14.jpeg",
+        "kind": "logo",
+        "caption": "Logo original de Inversiones MarSaLe 0216, C.A. sobre fondo transparente: sol naranja saliendo tras seis ondas de mar en degradado teal, colina verde con la escena del campesino y el buey, y el wordmark «Inversiones MarSaLe 0216 C.A» con el RIF J-40776405-5. Es la imagen de la que se muestrearon píxel a píxel todos los hexadecimales del sistema de diseño."
+      }
+    ]
   },
   {
     "slug": "telemedicina",
@@ -4554,82 +4560,82 @@ export const projects = [
     "categoryShort": "Fintech",
     "media": [
       {
-        "src": "/Proyectos/paguetodo/2.png",
+        "src": "/proyectos/paguetodo/2.png",
         "kind": "screenshot",
         "caption": "Login de la app Paguetodo: logo con la P azul y el punto amarillo, botón amarillo «Nuevo usuario» y acceso biométrico"
       },
       {
-        "src": "/Proyectos/paguetodo/3.png",
+        "src": "/proyectos/paguetodo/3.png",
         "kind": "screenshot",
         "caption": "Diálogo de actualización de versión sobre la pantalla de servicios"
       },
       {
-        "src": "/Proyectos/paguetodo/4.png",
+        "src": "/proyectos/paguetodo/4.png",
         "kind": "screenshot",
         "caption": "Servicios disponibles: rejilla de tarjetas con CANTV, Corpoelec, Digitel e Inter"
       },
       {
-        "src": "/Proyectos/paguetodo/5.png",
+        "src": "/proyectos/paguetodo/5.png",
         "kind": "screenshot",
         "caption": "Más servicios de recarga: Movistar pospago, prepago, Inter y SimpleTV"
       },
       {
-        "src": "/Proyectos/paguetodo/6.png",
+        "src": "/proyectos/paguetodo/6.png",
         "kind": "screenshot",
         "caption": "Inventario disponible en prepago, con botón azul de compra"
       },
       {
-        "src": "/Proyectos/paguetodo/7.png",
+        "src": "/proyectos/paguetodo/7.png",
         "kind": "screenshot",
         "caption": "Métodos de compra: Credicard débito, pago móvil, C2P Bancaribe y transferencia inmediata"
       },
       {
-        "src": "/Proyectos/paguetodo/8.png",
+        "src": "/proyectos/paguetodo/8.png",
         "kind": "screenshot",
         "caption": "Formulario de pago con tarjeta de débito y cinta de bancos aliados"
       },
       {
-        "src": "/Proyectos/paguetodo/9.png",
+        "src": "/proyectos/paguetodo/9.png",
         "kind": "screenshot",
         "caption": "Instrucciones de pago móvil con datos copiables y nota operativa"
       },
       {
-        "src": "/Proyectos/paguetodo/10.png",
+        "src": "/proyectos/paguetodo/10.png",
         "kind": "screenshot",
         "caption": "Pago C2P Bancaribe: campos con borde amarillo y contador de caracteres"
       },
       {
-        "src": "/Proyectos/paguetodo/11.png",
+        "src": "/proyectos/paguetodo/11.png",
         "kind": "screenshot",
         "caption": "Transferencia inmediata con selección de banco y validación de referencia"
       },
       {
-        "src": "/Proyectos/paguetodo/12.png",
+        "src": "/proyectos/paguetodo/12.png",
         "kind": "screenshot",
         "caption": "Servicio de ayuda: preguntas frecuentes, tutoriales y botón flotante de WhatsApp"
       },
       {
-        "src": "/Proyectos/paguetodo/13.png",
+        "src": "/proyectos/paguetodo/13.png",
         "kind": "screenshot",
         "caption": "Tutoriales en vídeo: registro, compra de inventario, proceso de recarga y demo"
       },
       {
-        "src": "/Proyectos/paguetodo/14.png",
+        "src": "/proyectos/paguetodo/14.png",
         "kind": "screenshot",
         "caption": "Consulta CANTV por número de contrato con advertencia de pago no reversable"
       },
       {
-        "src": "/Proyectos/paguetodo/15.png",
+        "src": "/proyectos/paguetodo/15.png",
         "kind": "screenshot",
         "caption": "Selección de deuda vencida, actual o total antes de pagar"
       },
       {
-        "src": "/Proyectos/paguetodo/16.png",
+        "src": "/proyectos/paguetodo/16.png",
         "kind": "screenshot",
         "caption": "Recibo de compra CANTV emitido por Servicios Paguetodo, C.A."
       },
       {
-        "src": "/Proyectos/paguetodo/17.png",
+        "src": "/proyectos/paguetodo/17.png",
         "kind": "screenshot",
         "caption": "Segundo recibo con número de aprobación y estatus exitoso"
       }
@@ -4831,17 +4837,17 @@ export const projects = [
     "categoryShort": "App móvil",
     "media": [
       {
-        "src": "/Proyectos/artlex/2.png",
+        "src": "/proyectos/artlex/2.png",
         "kind": "screenshot",
         "caption": "Pantalla de bienvenida: logotipo circular de Artlex sobre azul noche, titular 'Gestiona tu Negocio' y los botones ¡Registrate! e Iniciar Sesion."
       },
       {
-        "src": "/Proyectos/artlex/3.png",
+        "src": "/proyectos/artlex/3.png",
         "kind": "screenshot",
         "caption": "Portada de la app: cabecera azul con el rótulo ARTLEX y foto de perfil, buscador con botón de filtros crema, carrusel de 'Productos más vendidos' con Arroz Mary y Harina P.A.N., y barra inferior flotante de cinco iconos."
       },
       {
-        "src": "/Proyectos/artlex/1.mp4",
+        "src": "/proyectos/artlex/1.mp4",
         "kind": "video",
         "caption": "Recorrido en vídeo por la aplicación en un dispositivo Android: acceso, portada, exploración y ficha de producto."
       }
@@ -5060,27 +5066,27 @@ export const projects = [
     "categoryShort": "App móvil",
     "media": [
       {
-        "src": "/Proyectos/servicios_ya_ve/1.mp4",
+        "src": "/proyectos/servicios_ya_ve/1.mp4",
         "kind": "video",
         "caption": "Recorrido en vídeo de 14 segundos sobre dispositivo Android: bienvenida, apertura de la hoja de registro y hoja de inicio de sesión."
       },
       {
-        "src": "/Proyectos/servicios_ya_ve/2.png",
+        "src": "/proyectos/servicios_ya_ve/2.png",
         "kind": "screenshot",
         "caption": "Pantalla de bienvenida: «Contrata u ofrece servicios», con ilustración del acuerdo firmado y los botones ¡Regístrate! e Iniciar Sesión."
       },
       {
-        "src": "/Proyectos/servicios_ya_ve/3.png",
+        "src": "/proyectos/servicios_ya_ve/3.png",
         "kind": "screenshot",
         "caption": "Verificación del código: seis casillas independientes para el código enviado por correo, con reenvío y retorno al paso anterior."
       },
       {
-        "src": "/Proyectos/servicios_ya_ve/4.png",
+        "src": "/proyectos/servicios_ya_ve/4.png",
         "kind": "screenshot",
         "caption": "Hoja modal de inicio de sesión sobre la bienvenida atenuada: correo, contraseña, botón Entrar y enlace de restauración."
       },
       {
-        "src": "/Proyectos/servicios_ya_ve/5.png",
+        "src": "/proyectos/servicios_ya_ve/5.png",
         "kind": "screenshot",
         "caption": "Hoja modal de registro con los campos compuestos venezolanos: letra de documento más RIF/CI (0/9), prefijo 412 más teléfono (0/8) y fecha DDMMYYYY."
       }

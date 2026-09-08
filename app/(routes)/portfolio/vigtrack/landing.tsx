@@ -1291,9 +1291,9 @@ const Landing = () => {
                     />
 
                     <div className="grid gap-6 mt-12 lg:grid-cols-2 lg:items-start">
-                        <Reveal direction="right">
+                        <Reveal direction="right" className="min-w-0">
                             <div
-                                className="overflow-hidden rounded-[10px] border"
+                                className="min-w-0 overflow-hidden rounded-[10px] border"
                                 style={{ borderColor: "rgba(148,163,184,0.20)", background: "rgba(30,41,59,0.55)" }}
                             >
                                 <div className="flex items-center gap-2 border-b px-4 py-2.5" style={{ borderColor: "rgba(148,163,184,0.16)" }}>
@@ -1351,9 +1351,9 @@ const Landing = () => {
                             </div>
                         </Reveal>
 
-                        <Reveal direction="left" delay={0.12}>
+                        <Reveal direction="left" delay={0.12} className="min-w-0">
                             <div
-                                className="h-full rounded-[10px] border p-5 md:p-7"
+                                className="h-full min-w-0 rounded-[10px] border p-5 md:p-7"
                                 style={{
                                     borderColor: "rgba(37,99,235,0.42)",
                                     background: "linear-gradient(160deg, rgba(37,99,235,0.16), rgba(15,23,42,0.4))",
@@ -1411,7 +1411,7 @@ const Landing = () => {
                     />
 
                     <div className="grid gap-8 mt-12 lg:grid-cols-[420px_1fr] lg:items-start">
-                        <Reveal direction="right">
+                        <Reveal direction="right" className="min-w-0">
                             <BrowserFrame url="vigtrack.app/login">
                                 <MockLogin />
                             </BrowserFrame>
