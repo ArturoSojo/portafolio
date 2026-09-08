@@ -7,6 +7,12 @@ import type { LucideIcon } from "lucide-react";
 import { ArrowDown, ArrowRight, Github, Globe, Play } from "lucide-react";
 
 import { getProject, nextProject } from "@/data-projects";
+import { Fraunces, Poppins } from "next/font/google";
+
+// Las dos tipografías de la marca, servidas por Next en lugar de un <link> a Google.
+const fraunces = Fraunces({ subsets: ["latin"], weight: ["400", "600", "700"], variable: "--bc-serif", display: "swap" });
+const poppins = Poppins({ subsets: ["latin"], weight: ["300", "400", "500", "600", "700"], variable: "--bc-sans", display: "swap" });
+
 import ProjectShell from "@/components/projects/project-shell";
 import { BrandButton, Chip, CountMetric, Marquee, ProjectOutro, SectionHead } from "@/components/projects/bits";
 import { Reveal, Stagger, StaggerItem, RevealWords } from "@/components/projects/reveal";
@@ -157,11 +163,11 @@ const INFORME = [
 
 const css = `
 .bc-serif {
-  font-family: "Fraunces", "Playfair Display", ui-serif, Georgia, "Times New Roman", serif;
+  font-family: var(--bc-serif), "Playfair Display", ui-serif, Georgia, "Times New Roman", serif;
   font-optical-sizing: auto;
 }
 .bc-ui {
-  font-family: "Poppins", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  font-family: var(--bc-sans), ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
 }
 
 /* El lienzo: calle oscura vista desde fuera del escaparate. */
@@ -259,7 +265,7 @@ main.bc-shell > .z-50 { color: ${INK}; }
 
 /* Las métricas van en Fraunces, como los KPI reales de la app. */
 .bc-metrics .brand-gradient-text {
-  font-family: "Fraunces", "Playfair Display", ui-serif, Georgia, serif;
+  font-family: var(--bc-serif), "Playfair Display", ui-serif, Georgia, serif;
   letter-spacing: -0.02em;
 }
 
@@ -1185,12 +1191,8 @@ const Landing = () => {
     const screenName = (i: number) => p.uiScreens[i]?.name ?? "";
 
     return (
-        <ProjectShell name={p.name} brand={p.brand} links={p.links} className="bc-shell bc-ui">
+        <ProjectShell name={p.name} brand={p.brand} links={p.links} className={`bc-shell bc-ui ${fraunces.variable} ${poppins.variable}`}>
             <style>{css}</style>
-            <link
-                rel="stylesheet"
-                href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Poppins:wght@300;400;500;600;700&display=swap"
-            />
 
             {/* ═════════════════════════ HERO · LA VITRINA ═════════════════════════ */}
             <section className="relative px-4 pt-28 pb-20 overflow-hidden md:px-6 md:pt-32 md:pb-28">
