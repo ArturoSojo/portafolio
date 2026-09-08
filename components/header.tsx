@@ -2,10 +2,16 @@
 
 import { socialNetworks } from "@/data";
 import Link from "next/link";
-import Image from "next/image";
+import { usePathname } from "next/navigation";
 import { MotionTransition } from "./transition-component";
 
 const Header = () => {
+    const pathname = usePathname();
+
+    // Las landings de proyecto traen su propia barra superior con la marca del producto.
+    const isProjectLanding = /^\/portfolio\/.+/.test(pathname ?? "");
+    if (isProjectLanding) return null;
+
     return (
         <MotionTransition position="bottom" className="absolute z-40 inline-block w-full top-5 md:top-10">
             <header>
@@ -17,13 +23,6 @@ const Header = () => {
                         </h1>
                     </Link>
                     <div className="flex items-center justify-center gap-7">
-                        <Image
-                            src="/googleplay.png"
-                            alt="View developer profile"
-                            width={40}
-                            height={40}
-                            className="object-contain"
-                        ></Image>
                         {socialNetworks.map(({ logo, src, id }) => (
                             <Link
                                 key={id}

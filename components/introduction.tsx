@@ -7,16 +7,16 @@ const Introduction = () => {
             <div className="z-20 grid items-center h-full p-6 py-20 md:py-0 md:grid-cols-2">
                 <Image src="/home-8.png" priority width="800" height="800" alt="Avatar" />
                 <div className="flex flex-col justify-center max-w-md">
-                    <h1 className="mb-5 text-2xl leading-tight text-center md:text-left md:text-4xl md:mb-10">If you can imagine it, <br />
+                    <h1 className="mb-5 text-2xl leading-tight text-center md:text-left md:text-4xl md:mb-10">Si puedes pensarlo, <br />
                         <TypeAnimation
                             sequence={[
-                                'you can build it',
+                                'puedes programarlo',
                                 1000,
-                                'you can optimize it',
+                                'puedes optimizarlo',
                                 1000,
-                                'you can ship it',
+                                'puedes implementarlo',
                                 1000,
-                                'you can scale it',
+                                'puedes desarrollarlo',
                                 1000
                             ]}
                             wrapper="span"
@@ -27,16 +27,17 @@ const Introduction = () => {
                     </h1>
 
                     <p className="mx-auto mb-2 text-xl md:text-xl md:mx-0 md:mb-8">
-                        As an Android developer specialized in Flutter, I blend design and functionality to deliver impactful, seamless, and inclusive mobile experiences.
+                        Desarrollador móvil y web con <span className="font-bold text-secondary">4 años de experiencia</span> construyendo
+                        apps en Flutter y plataformas en React y Next.js: de la interfaz a la tienda, con el backend incluido.
                     </p>
 
                     <div className="flex items-center justify-center gap-3 md:justify-start md:gap-10">
                         <a href="/portfolio" className="px-3 py-2 my-2 transition-all border-2 cursor-pointer text-md w-fit rounded-xl hover:shadow-xl hover:shadow-white/50">
-                            View projects
+                            Ver proyectos
                         </a>
-                        <a href="https://wa.me/584168624450"
+                        <a href="https://wa.me/584168624450" 
                         className="px-3 py-2 my-5 transition-all border-2 cursor-pointer text-md w-fit text-secondary border-secondary rounded-xl hover:shadow-xl hover:shadow-secondary">
-                        Let&apos;s connect
+                        Contacta conmigo
                         </a>
 
                     </div>

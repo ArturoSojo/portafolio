@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 180" fill="none">
+  <!-- Simbolo ROBUST: dos arcos en movimiento. El color se aplica desde
+       Flutter con un ColorFilter, por eso ambos trazos usan currentColor. -->
+  <path fill="currentColor" d="M8 84C78 24 170 0 244 10L268 52C196 38 90 64 8 84Z"/>
+  <path fill="currentColor" d="M4 176C72 104 152 70 212 78L212 176L174 176L174 110C126 114 56 144 4 176Z"/>
+</svg>
