@@ -18,6 +18,13 @@ import { BrandButton, Chip, CountMetric, Marquee, ProjectOutro, SectionHead } fr
 import { Reveal, Stagger, StaggerItem, RevealWords } from "@/components/projects/reveal";
 import { AutoVideo, BrowserFrame, DragRail, PhoneFrame, ShotCard } from "@/components/projects/frames";
 
+/**
+ * Redondea un numero destinado a un atributo SVG. El navegador reserializa los
+ * atributos numericos de SVG con menos precision que el renderizador del
+ * servidor, y la diferencia dispara un fallo de hidratacion de React.
+ */
+const svgNum = (n: number) => Number(n.toFixed(3));
+
 const p = getProject("boutique-conny")!;
 const nxt = nextProject("boutique-conny");
 
@@ -946,9 +953,9 @@ const MockDashboard = () => {
                         <svg viewBox="0 0 100 100" className="h-[112px] w-[112px]" aria-hidden>
                             <g transform="rotate(-90 50 50)">
                                 {DONA.map((seg) => {
-                                    const len = (seg.value / 100) * C - 2;
-                                    const dash = `${len} ${C - len}`;
-                                    const dashOffset = -offset;
+                                    const len = svgNum((seg.value / 100) * C - 2);
+                                    const dash = `${len} ${svgNum(C - len)}`;
+                                    const dashOffset = svgNum(-offset);
                                     offset += (seg.value / 100) * C;
                                     return (
                                         <circle

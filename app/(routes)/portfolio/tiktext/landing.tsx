@@ -871,8 +871,8 @@ const Landing = () => {
                     }}
                 />
 
-                <div className="relative w-full max-w-5xl mx-auto">
-                    <p className="tt-mono flex items-center gap-2 text-[10px] uppercase tracking-[0.32em] text-white/45">
+                <div className="relative w-full max-w-5xl mx-auto text-center">
+                    <p className="tt-mono flex items-center justify-center gap-2 text-[10px] uppercase tracking-[0.32em] text-white/45">
                         <span className="h-1.5 w-1.5 rounded-full bg-[#00FF94] anim-blink" />
                         feed · 01 / {SECTIONS.length}
                     </p>

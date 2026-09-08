@@ -14,6 +14,9 @@ export interface ProjectBrandData {
     surface: string;
     text: string;
     gradient: string;
+    textGradient: string;
+    ink: string;
+    onBrand: string;
     mood: string;
     source: string;
 }

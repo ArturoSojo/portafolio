@@ -13,6 +13,12 @@ export interface ProjectBrand {
     surface: string;
     text: string;
     gradient: string;
+    /** Degradado apto para rellenar texto: ninguna parada se confunde con el fondo. */
+    textGradient: string;
+    /** Primario ajustado hasta ser legible sobre el fondo. Para chips y textos pequeños. */
+    ink: string;
+    /** Color de rótulo que se lee sobre TODAS las paradas del degradado. */
+    onBrand: string;
 }
 
 export interface ProjectLinks {
@@ -40,6 +46,9 @@ export const brandVars = (brand: ProjectBrand): BrandStyle => ({
     "--brand-surface": brand.surface,
     "--brand-text": brand.text,
     "--brand-gradient": brand.gradient,
+    "--brand-text-gradient": brand.textGradient ?? brand.gradient,
+    "--brand-ink": brand.ink ?? brand.primary,
+    "--brand-on-brand": brand.onBrand ?? brand.bg,
 });
 
 /**
@@ -122,10 +131,10 @@ const TopLink = ({
         rel="noreferrer"
         className={`inline-flex items-center gap-1.5 rounded-full px-3 py-1.5 text-xs font-medium transition-all duration-300 ${
             tone === "solid"
-                ? "text-[color:var(--brand-bg)] hover:brightness-110"
+                ? "text-[color:var(--brand-on-brand)] hover:brightness-110"
                 : "border border-white/20 hover:border-[color:var(--brand-primary)] hover:text-[color:var(--brand-primary)]"
         }`}
-        style={tone === "solid" ? { backgroundImage: "var(--brand-gradient)" } : undefined}
+        style={tone === "solid" ? { backgroundImage: "var(--brand-text-gradient)" } : undefined}
     >
         {children}
         <span className="hidden sm:inline">{label}</span>

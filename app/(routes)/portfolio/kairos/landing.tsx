@@ -13,6 +13,13 @@ import { BrandButton, Chip, CountMetric, Magnetic, ProjectOutro, SectionHead } f
 import { BrowserFrame, DragRail, ShotCard } from "@/components/projects/frames";
 import { Reveal, RevealWords, Stagger, StaggerItem } from "@/components/projects/reveal";
 
+/**
+ * Redondea un numero destinado a un atributo SVG. El navegador reserializa los
+ * atributos numericos de SVG con menos precision que el renderizador del
+ * servidor, y la diferencia dispara un fallo de hidratacion de React.
+ */
+const svgNum = (n: number) => Number(n.toFixed(3));
+
 const p = getProject("kairos")!;
 const nxt = nextProject("kairos");
 
@@ -476,7 +483,10 @@ const Spark = ({ seed, label }: { seed: number; label: string }) => {
         const x = j + t * 0.5 + seed;
         return 0.5 + Math.sin(x * 0.55) * 0.3 + Math.sin(x * 1.31 + seed) * 0.14;
     });
-    const pts = vals.map((v, j) => `${(j / (n - 1)) * 120},${32 - Math.min(0.98, Math.max(0.02, v)) * 30}`);
+    const pts = vals.map(
+        (v, j) =>
+            `${svgNum((j / (n - 1)) * 120)},${svgNum(32 - Math.min(0.98, Math.max(0.02, v)) * 30)}`
+    );
     const last = vals[n - 1];
 
     return (
@@ -529,8 +539,8 @@ const CandleSvg = ({
     const priceH = height - volH;
     const min = Math.min(...series.map((k) => k.l));
     const max = Math.max(...series.map((k) => k.h));
-    const y = (v: number) => ((max - v) / (max - min)) * (priceH - 8) + 4;
-    const step = width / series.length;
+    const y = (v: number) => svgNum(((max - v) / (max - min)) * (priceH - 8) + 4);
+    const step = svgNum(width / series.length);
     const last = series[series.length - 1];
 
     return (
@@ -558,24 +568,24 @@ const CandleSvg = ({
             {series.map((k, i) => {
                 const bull = k.c >= k.o;
                 const color = bull ? C.up : C.down;
-                const cx = i * step + step / 2;
-                const bw = Math.max(1.5, step * 0.6);
+                const cx = svgNum(i * step + step / 2);
+                const bw = svgNum(Math.max(1.5, step * 0.6));
                 return (
                     <g key={i}>
                         <line x1={cx} x2={cx} y1={y(k.h)} y2={y(k.l)} stroke={color} strokeWidth="1" />
                         <rect
-                            x={cx - bw / 2}
+                            x={svgNum(cx - bw / 2)}
                             y={y(Math.max(k.o, k.c))}
                             width={bw}
-                            height={Math.max(1, Math.abs(y(k.o) - y(k.c)))}
+                            height={svgNum(Math.max(1, Math.abs(y(k.o) - y(k.c))))}
                             fill={color}
                         />
                         {withVolume && (
                             <rect
-                                x={cx - bw / 2}
-                                y={height - k.v * volH}
+                                x={svgNum(cx - bw / 2)}
+                                y={svgNum(height - k.v * volH)}
                                 width={bw}
-                                height={k.v * volH}
+                                height={svgNum(k.v * volH)}
                                 fill={color}
                                 opacity="0.35"
                             />
@@ -599,8 +609,8 @@ const CandleSvg = ({
 };
 
 const RsiSvg = ({ width, height }: { width: number; height: number }) => {
-    const y = (v: number) => height - (v / 100) * height;
-    const step = width / RSI_SERIES.length;
+    const y = (v: number) => svgNum(height - (v / 100) * height);
+    const step = svgNum(width / RSI_SERIES.length);
     return (
         <svg width={width} height={height} className="block">
             {[30, 50, 70].map((g) => (
@@ -619,7 +629,7 @@ const RsiSvg = ({ width, height }: { width: number; height: number }) => {
                 </g>
             ))}
             <polyline
-                points={RSI_SERIES.map((v, i) => `${i * step + step / 2},${y(v)}`).join(" ")}
+                points={RSI_SERIES.map((v, i) => `${svgNum(i * step + step / 2)},${svgNum(y(v))}`).join(" ")}
                 fill="none"
                 stroke={C.cyan}
                 strokeWidth="1.2"

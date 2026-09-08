@@ -391,8 +391,10 @@ const ArtlexMark = ({ size = 120, uid = "a", className }: { size?: number; uid?:
                 return (
                     <circle
                         key={i}
-                        cx={60 + Math.cos(angle) * 47}
-                        cy={60 + Math.sin(angle) * 47}
+                        // Redondeado: sin recorte, servidor y cliente serializan el
+                        // ultimo decimal distinto y React reporta un fallo de hidratacion.
+                        cx={Number((60 + Math.cos(angle) * 47).toFixed(3))}
+                        cy={Number((60 + Math.sin(angle) * 47).toFixed(3))}
                         r={i % 3 === 0 ? 2.4 : 1.3}
                         opacity={i % 3 === 0 ? 0.95 : 0.5}
                     />

@@ -11,9 +11,9 @@ export const Chip = ({ children, className }: { children: React.ReactNode; class
     <span
         className={`inline-flex items-center gap-1.5 rounded-full border px-3 py-1 text-[11px] font-medium uppercase tracking-[0.16em] ${className ?? ""}`}
         style={{
-            borderColor: "color-mix(in srgb, var(--brand-primary) 40%, transparent)",
-            color: "var(--brand-primary)",
-            background: "color-mix(in srgb, var(--brand-primary) 10%, transparent)",
+            borderColor: "color-mix(in srgb, var(--brand-ink) 42%, transparent)",
+            color: "var(--brand-ink)",
+            background: "color-mix(in srgb, var(--brand-ink) 12%, transparent)",
         }}
     >
         {children}
@@ -209,13 +209,13 @@ export const BrandButton = ({
     const external = href.startsWith("http");
     const classes =
         variant === "solid"
-            ? "text-[color:var(--brand-bg)] shadow-lg hover:brightness-110"
+            ? "text-[color:var(--brand-on-brand)] shadow-lg hover:brightness-110"
             : "border border-white/25 hover:border-[color:var(--brand-primary)] hover:text-[color:var(--brand-primary)]";
 
     const content = (
         <span
             className={`inline-flex items-center gap-2 rounded-full px-6 py-3 text-sm font-semibold transition-all duration-300 shine-sweep ${classes} ${className ?? ""}`}
-            style={variant === "solid" ? { backgroundImage: "var(--brand-gradient)" } : undefined}
+            style={variant === "solid" ? { backgroundImage: "var(--brand-text-gradient)" } : undefined}
         >
             {children}
         </span>

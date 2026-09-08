@@ -219,7 +219,10 @@ export const projects = [
       "text": "#E2E8F0",
       "gradient": "linear-gradient(135deg, #F03030 0%, #FF6A5F 100%)",
       "mood": "Gamer nocturno: negro casi absoluto con rejilla HUD, rojo neón dominante muestreado del logotipo y azul eléctrico como acento secundario. Tipografía Space Grotesk para titulares y Outfit para el cuerpo, con cifras tabulares en los montos. Halos, destellos diagonales y líneas de escaneo sobre tarjetas con borde degradado.",
-      "source": "/Users/macbook/refill-store/web/tailwind.config.js (bloques colors.neon, colors.base y backgroundImage.brand-gradient) y /Users/macbook/refill-store/web/src/styles/index.css; documentado en la sección «Paleta» del README"
+      "source": "/Users/macbook/refill-store/web/tailwind.config.js (bloques colors.neon, colors.base y backgroundImage.brand-gradient) y /Users/macbook/refill-store/web/src/styles/index.css; documentado en la sección «Paleta» del README",
+      "textGradient": "linear-gradient(120deg, #F03030 0%, #FF6A5F 100%)",
+      "ink": "#F03030",
+      "onBrand": "#0A0A0F"
     },
     "links": {
       "github": "https://github.com/ArturoSojo/refill-store",
@@ -569,7 +572,10 @@ export const projects = [
       "text": "#F2F4FF",
       "gradient": "linear-gradient(135deg, #6C4DF4 0%, #4D9FF4 100%)",
       "mood": "Cósmico nocturno y editorial: azul de medianoche profundo, violeta de nebulosa y un cian eléctrico que solo se usa para lo que brilla de verdad. Tipografía Sora para leer y Space Mono para las cifras. Es oscuro siempre, a propósito, porque la app se usa de noche y con la cara pegada a la pantalla.",
-      "source": "/Users/macbook/nebula/lib/core/theme/nebula_theme.dart (clase NebulaColors, paleta pineada) y /Users/macbook/nebula-web/tailwind.config.js (los mismos hex replicados en el panel web)"
+      "source": "/Users/macbook/nebula/lib/core/theme/nebula_theme.dart (clase NebulaColors, paleta pineada) y /Users/macbook/nebula-web/tailwind.config.js (los mismos hex replicados en el panel web)",
+      "textGradient": "linear-gradient(120deg, #6C4DF4 0%, #4D9FF4 100%)",
+      "ink": "#7E62F5",
+      "onBrand": "#0A0A0F"
     },
     "links": {},
     "uiScreens": [
@@ -919,7 +925,10 @@ export const projects = [
       "text": "#F6F4FA",
       "gradient": "linear-gradient(135deg, #F46F4C 0%, #B388FF 58%, #6C5CE7 100%)",
       "mood": "Biblioteca de noche. Fondo casi negro con matiz violeta, lomos de libro en naranja cálido que actúan como la única fuente de luz, y destellos morados y cian que aparecen cuando entra la lectura rápida o la IA. Cálido y ligeramente cinematográfico, nunca corporativo.",
-      "source": "/Users/macbook/eduletter/lib/utils/color_category.dart (maximumOrange #F46F4C y onBrand #1A0E0A), /Users/macbook/eduletter/web/eduletterWeb/tailwind.config.ts + styles/globals.css (escala brand 50–900 y tokens CSS), /Users/macbook/eduletter-admin/lib/theme.dart (AppColors: brand #F46F4C, accent #B388FF, bg #0D0B14, surface #17141F, text #F6F4FA, muted #9C93B0), /Users/macbook/eduletter/lib/view/speed_read/speed_read_theme.dart (acentos de ambiente) y /Users/macbook/eduletter/lib/view/edugenius/edugenius_hub_screen.dart (#6C5CE7 → #00B8D4)"
+      "source": "/Users/macbook/eduletter/lib/utils/color_category.dart (maximumOrange #F46F4C y onBrand #1A0E0A), /Users/macbook/eduletter/web/eduletterWeb/tailwind.config.ts + styles/globals.css (escala brand 50–900 y tokens CSS), /Users/macbook/eduletter-admin/lib/theme.dart (AppColors: brand #F46F4C, accent #B388FF, bg #0D0B14, surface #17141F, text #F6F4FA, muted #9C93B0), /Users/macbook/eduletter/lib/view/speed_read/speed_read_theme.dart (acentos de ambiente) y /Users/macbook/eduletter/lib/view/edugenius/edugenius_hub_screen.dart (#6C5CE7 → #00B8D4)",
+      "textGradient": "linear-gradient(120deg, #F46F4C 0%, #B388FF 50%, #6C5CE7 100%)",
+      "ink": "#F46F4C",
+      "onBrand": "#0A0A0F"
     },
     "links": {
       "github": "https://github.com/ArturoSojo/eduletterweb",
@@ -1211,7 +1220,10 @@ export const projects = [
       "text": "#4A5568",
       "gradient": "linear-gradient(135deg, #2BB3A6 0%, #187A98 100%)",
       "mood": "Caribe costero y luminoso: turquesa de agua clara, verde de palmera y dorado de arena al atardecer sobre neutros gris pizarra. Cercano y de pueblo, pero con acabado de app seria — tipografía Nunito Sans redondeada, tarjetas blancas de esquinas suaves y un único botón dorado de acción principal por pantalla.",
-      "source": "/Users/macbook/brio/packages/brio_ui/lib/src/colors.dart (paleta oficial derivada del logo) y /Users/macbook/brio/packages/brio_ui/lib/src/theme.dart (temas claro/oscuro)"
+      "source": "/Users/macbook/brio/packages/brio_ui/lib/src/colors.dart (paleta oficial derivada del logo) y /Users/macbook/brio/packages/brio_ui/lib/src/theme.dart (temas claro/oscuro)",
+      "textGradient": "linear-gradient(120deg, #228F85 0%, #187A98 100%)",
+      "ink": "#1D7A71",
+      "onBrand": "#0A0A0F"
     },
     "links": {},
     "uiScreens": [
@@ -1494,7 +1506,10 @@ export const projects = [
       "text": "#e3e8ef",
       "gradient": "linear-gradient(135deg, #22d3ee 0%, #16c784 55%, #0b0f14 100%)",
       "mood": "Terminal profesional nocturno. Fondo casi negro azulado, superficies escalonadas en gris pizarra y un cian eléctrico como único color de acción; el verde y el rojo están reservados a la semántica de mercado (alcista y bajista) y nunca decoran. El monograma es una K construida con trazos que se cruzan como mechas de vela, en cian, con un segmento verde ascendente y otro rojo descendente; el logotipo KAIROS va en gris muy claro, ancho y sin serifas. Densidad de información alta, tipografía monoespaciada con cifras tabulares para todo lo numérico, y cero adornos: la jerarquía la marcan el color y la alineación, no las sombras.",
-      "source": "/Users/macbook/trading-platform/src/app/globals.css (tokens Material Design 3 y semántica de mercado) espejados literalmente en /Users/macbook/trading-platform/src/charting/theme.ts (DARK_THEME); marca en /Users/macbook/trading-platform/public/brand/kairos-lockup.png"
+      "source": "/Users/macbook/trading-platform/src/app/globals.css (tokens Material Design 3 y semántica de mercado) espejados literalmente en /Users/macbook/trading-platform/src/charting/theme.ts (DARK_THEME); marca en /Users/macbook/trading-platform/public/brand/kairos-lockup.png",
+      "textGradient": "linear-gradient(120deg, #22d3ee 0%, #16c784 50%, #6D6F72 100%)",
+      "ink": "#22d3ee",
+      "onBrand": "#0A0A0F"
     },
     "links": {
       "web": "https://kairos-74b99.web.app"
@@ -1780,7 +1795,10 @@ export const projects = [
       "text": "#211a2e",
       "gradient": "linear-gradient(135deg, #421f6e 0%, #7a3fc4 42%, #f0547e 78%, #fc8484 100%)",
       "mood": "Optimista y de producto: violeta profundo que abre a magenta y coral, como una flecha que despega. Neutros entintados de violeta para que ningún gris se vea sucio al lado de la marca, superficies blancas con sombras muy difusas de tinte morado, esquinas muy redondeadas (hasta 2rem) y un punto cian (#6bc5dc) usado con cuentagotas. Los semánticos (ámbar aviso, esmeralda correcto, rosa error) se dejan fuera de la marca a propósito: un aviso de riesgo no debe teñirse de violeta. Tema claro forzado con `color-scheme: light`.",
-      "source": "/Users/macbook/zocialy/tailwind.config.ts (paleta muestreada píxel a píxel de /Users/macbook/zocialy/public/icon-zocialy.png; replicada en /Users/macbook/zocialy_admin/lib/core/theme/zocialy_theme.dart y en /Users/macbook/zocialy/src/app/globals.css)"
+      "source": "/Users/macbook/zocialy/tailwind.config.ts (paleta muestreada píxel a píxel de /Users/macbook/zocialy/public/icon-zocialy.png; replicada en /Users/macbook/zocialy_admin/lib/core/theme/zocialy_theme.dart y en /Users/macbook/zocialy/src/app/globals.css)",
+      "textGradient": "linear-gradient(120deg, #421f6e 0%, #7a3fc4 33%, #DD4D74 67%, #C06464 100%)",
+      "ink": "#7a3fc4",
+      "onBrand": "#FFFFFF"
     },
     "links": {
       "web": "https://zocialy-47c9c.web.app"
@@ -2130,7 +2148,10 @@ export const projects = [
       "text": "#181D27",
       "gradient": "linear-gradient(135deg, #345A66 0%, #02AFAA 60%, #47EBAF 100%)",
       "mood": "Turquesa confiable: el verde azulado de una app financiera seria, suavizado por aguamarinas luminosos (#A9FFF0, #47EBAF) y grises muy claros. Superficies blancas, esquinas redondeadas de 12 px, tipografía sans de sistema y el wordmark 'épale' en minúsculas y trazo redondo sobre el degradado teal.",
-      "source": "/Users/macbook/epale-mobile/lib/config/theme/app_theme.dart (clase AppColors: primary #02AFAA, darkGreen #345A66, green_600 #47EBAF, lightGreen #A9FFF0, gray_25 #FDFDFD, gray_900 #181D27; ThemeExtension GradientColors linearOne #345A66 → linearTwo #02AFAA) y /Users/macbook/epale-mobile/flutter_native_splash.yaml (color de splash #1D8387)"
+      "source": "/Users/macbook/epale-mobile/lib/config/theme/app_theme.dart (clase AppColors: primary #02AFAA, darkGreen #345A66, green_600 #47EBAF, lightGreen #A9FFF0, gray_25 #FDFDFD, gray_900 #181D27; ThemeExtension GradientColors linearOne #345A66 → linearTwo #02AFAA) y /Users/macbook/epale-mobile/flutter_native_splash.yaml (color de splash #1D8387)",
+      "textGradient": "linear-gradient(120deg, #345A66 0%, #02938F 50%, #2D9670 100%)",
+      "ink": "#017E7A",
+      "onBrand": "#FFFFFF"
     },
     "links": {},
     "uiScreens": [
@@ -2467,7 +2488,10 @@ export const projects = [
       "text": "#FEFEFF",
       "gradient": "linear-gradient(135deg, #0152CD 0%, #0186FE 45%, #01BD47 100%)",
       "mood": "Deportivo y nocturno: azul cancha profundo como base, verde de acción para todo lo interactivo y un naranja de pelota que aparece solo en los acentos. Superficies casi negras con tinte violáceo, tipografía Poppins redondeada y bordes muy generosos que suavizan el contraste.",
-      "source": "lib/config/colors_collection.dart (clase AppColors, rama dev): splashScreenColor 0xff0152cd, lightBorderGreenColor 0xff01bd47, backgroundDarkMode 0xff15162d, searchBarBgDarkMode 0xff2e2d42, backgroundLightMode 0xfffefeff, lightModeBlueColor 0xff0186fe y personIconBgColor 0xffF26109, este último coincidente con el naranja del isotipo en assets/images/channels4_profile.jpg"
+      "source": "lib/config/colors_collection.dart (clase AppColors, rama dev): splashScreenColor 0xff0152cd, lightBorderGreenColor 0xff01bd47, backgroundDarkMode 0xff15162d, searchBarBgDarkMode 0xff2e2d42, backgroundLightMode 0xfffefeff, lightModeBlueColor 0xff0186fe y personIconBgColor 0xffF26109, este último coincidente con el naranja del isotipo en assets/images/channels4_profile.jpg",
+      "textGradient": "linear-gradient(120deg, #2A6ED5 0%, #0186FE 50%, #01BD47 100%)",
+      "ink": "#4882DB",
+      "onBrand": "#0A0A0F"
     },
     "links": {
       "github": "https://github.com/ArturoSojo/cliff_pickleball",
@@ -2810,7 +2834,10 @@ export const projects = [
       "text": "#FFFFFF",
       "gradient": "linear-gradient(135deg, #B31F0C 0%, #F5361B 62%, #FF7A1A 100%)",
       "mood": "Atlético y contundente. Negro casi absoluto, un rojo-naranja de alta energía y tipografía display condensada (Saira) sobre cuerpo neutro (Inter). El símbolo son dos arcos en movimiento, como la trayectoria de una bola y su rebote. El gradiente empieza en el rojo hundido —la esquina donde va el titular blanco— y termina en el ámbar, que nunca lleva texto encima. La identidad es nativa de fondo oscuro, pero el producto prioriza el tema claro, así que el rojo tiene variantes medidas para cada fondo.",
-      "source": "/Users/macbook/robust-pickleball/lib/config/theme/robust_colors.dart y /Users/macbook/robust-pickleball/lib/config/theme/robust_surfaces.dart (gradiente heroFill: brandDeep 0 → brand 0.62 → brandEmber 1); símbolo en /Users/macbook/robust-pickleball/assets/brand/mark.svg"
+      "source": "/Users/macbook/robust-pickleball/lib/config/theme/robust_colors.dart y /Users/macbook/robust-pickleball/lib/config/theme/robust_surfaces.dart (gradiente heroFill: brandDeep 0 → brand 0.62 → brandEmber 1); símbolo en /Users/macbook/robust-pickleball/assets/brand/mark.svg",
+      "textGradient": "linear-gradient(120deg, #BF4333 0%, #F5361B 50%, #FF7A1A 100%)",
+      "ink": "#F5361B",
+      "onBrand": "#0A0A0F"
     },
     "links": {},
     "uiScreens": [
@@ -3064,7 +3091,10 @@ export const projects = [
       "text": "#FCFCFB",
       "gradient": "linear-gradient(135deg, #1A2B6B 0%, #6D28D9 55%, #D33A2C 100%)",
       "mood": "Editorial corporativo: papel y tinta. Azul institucional con un rojo de acento que viene del logotipo (el infinito azul-rojo de 'Visionary Leaders App'), titulares en DM Serif Display sobre cuerpo Inter, superficies claras color crema con líneas finísimas, y un violeta reservado para los degradados de énfasis. Serio, denso en datos, nada festivo.",
-      "source": "/Users/macbook/eventsvileads_frontend/tailwind.config.ts (paleta `vl.*`: paper #F7F7F5, ink #0A0E1A, snow #FCFCFB, blue #1A2B6B, red #D33A2C, purple #6D28D9) + /Users/macbook/eventsvileads_frontend/src/index.css (variables HSL de tema claro/oscuro; el `--card` oscuro 224 30% 10% da #121621) + /Users/macbook/eventsvileads_frontend/assets/logo-full.png"
+      "source": "/Users/macbook/eventsvileads_frontend/tailwind.config.ts (paleta `vl.*`: paper #F7F7F5, ink #0A0E1A, snow #FCFCFB, blue #1A2B6B, red #D33A2C, purple #6D28D9) + /Users/macbook/eventsvileads_frontend/src/index.css (variables HSL de tema claro/oscuro; el `--card` oscuro 224 30% 10% da #121621) + /Users/macbook/eventsvileads_frontend/assets/logo-full.png",
+      "textGradient": "linear-gradient(120deg, #636F9A 0%, #844ADF 50%, #D33A2C 100%)",
+      "ink": "#7680A6",
+      "onBrand": "#FFFFFF"
     },
     "links": {},
     "uiScreens": [
@@ -3324,7 +3354,10 @@ export const projects = [
       "text": "#1c1830",
       "gradient": "linear-gradient(125deg, #d4567a 0%, #b8385f 100%)",
       "mood": "Boutique cálida y femenina en modo diurno: fondo rosa empolvado, tarjetas blancas de esquinas muy redondeadas, rosa fucsia como color de acción, azul marino profundo reservado para el panel de marca y detalles dorados de vitrina. Titulares en Fraunces serif, interfaz en Poppins. Semántica de color viva para el semáforo de fiados: verde al día, ámbar por vencer, rojo vencido.",
-      "source": "/Users/macbook/boutique-conny-app/src/theme.css (bloque :root — --rose #d4567a, --rose-d #b8385f, --navy #14142b, --gold #c9a35a, --bg #fbf2f4, --card #ffffff, --ink #1c1830, --pink #ec7f9b, --cream #f4ead2)"
+      "source": "/Users/macbook/boutique-conny-app/src/theme.css (bloque :root — --rose #d4567a, --rose-d #b8385f, --navy #14142b, --gold #c9a35a, --bg #fbf2f4, --card #ffffff, --ink #1c1830, --pink #ec7f9b, --cream #f4ead2)",
+      "textGradient": "linear-gradient(120deg, #d4567a 0%, #b8385f 100%)",
+      "ink": "#B24866",
+      "onBrand": "#FFFFFF"
     },
     "links": {},
     "uiScreens": [
@@ -3562,7 +3595,10 @@ export const projects = [
       "text": "#E2F0F3",
       "gradient": "linear-gradient(180deg, #2A5A68 0%, #1B3F4A 55%, #0A2029 100%)",
       "mood": "Frío industrial y mar profundo: azules petróleo sacados de las ondas del logo para decir «bajo control», con el naranja del sol reservado para cuando algo se sale de rango. Sobrio, legible bajo sol directo, sin un solo tono lila porque ese es el color de AppSheet y es justo lo que el cliente rechaza.",
-      "source": "/Users/macbook/Sistema-de-cavas/lib/core/design_system/tokens/ms_brand.dart y /Users/macbook/Sistema-de-cavas/lib/core/design_system/ms_tema.dart (hexadecimales muestreados del logo real de Inversiones MarSaLe; el gradiente es el de PantallaSplash y PantallaLogin)"
+      "source": "/Users/macbook/Sistema-de-cavas/lib/core/design_system/tokens/ms_brand.dart y /Users/macbook/Sistema-de-cavas/lib/core/design_system/ms_tema.dart (hexadecimales muestreados del logo real de Inversiones MarSaLe; el gradiente es el de PantallaSplash y PantallaLogin)",
+      "textGradient": "linear-gradient(120deg, #4C7480 0%, #5B757D 50%, #627076 100%)",
+      "ink": "#5B858F",
+      "onBrand": "#FFFFFF"
     },
     "links": {},
     "uiScreens": [
@@ -3771,7 +3807,10 @@ export const projects = [
       "text": "#1a1a1c",
       "gradient": "linear-gradient(135deg, #38bdf8 0%, #2563eb 100%)",
       "mood": "Clínico y sereno con acabado tipo macOS: fondo gris perla, tarjetas blancas de vidrio esmerilado, azul de sistema como único color de acción y una paleta semántica de estado (verde #34c759 activa, ámbar #ff9f0a en espera, gris #8e8e93 finalizada, rojo #ff3b30 rechazada). Tipografía SF con tracking ajustado y sombras muy suaves en tres niveles. Modo oscuro de grafito casi negro (#0f0f10 de fondo, #1c1c1e en tarjetas) con el azul subido a #2a91ff.",
-      "source": "/Users/macbook/telemedicina/src/index.css (tokens HSL en :root y .dark, con los hex anotados en comentarios), /Users/macbook/telemedicina/tailwind.config.ts (radios, sombras elev-1/2/3 y easing), /Users/macbook/telemedicina/public/favicon.svg (degradado #38bdf8 → #2563eb) y /Users/macbook/telemedicina/src/features/dashboard/components/ConsultStatusChart.tsx (colores de estado)"
+      "source": "/Users/macbook/telemedicina/src/index.css (tokens HSL en :root y .dark, con los hex anotados en comentarios), /Users/macbook/telemedicina/tailwind.config.ts (radios, sombras elev-1/2/3 y easing), /Users/macbook/telemedicina/public/favicon.svg (degradado #38bdf8 → #2563eb) y /Users/macbook/telemedicina/src/features/dashboard/components/ConsultStatusChart.tsx (colores de estado)",
+      "textGradient": "linear-gradient(120deg, #2888B3 0%, #2563eb 100%)",
+      "ink": "#006CDA",
+      "onBrand": "#FFFFFF"
     },
     "links": {},
     "uiScreens": [
@@ -3993,7 +4032,10 @@ export const projects = [
       "text": "#0f172a",
       "gradient": "linear-gradient(135deg, #0f172a 0%, #1e293b 45%, #2563eb 100%)",
       "mood": "Sobrio, institucional y operativo — azul corporativo sobre gris azulado frío, con una barra lateral casi negra (#0f172a) como ancla visual. El color nunca decora: solo informa. La escala semántica completa es ok #16a34a sobre #dcfce7, warn #d97706 sobre #fef3c7, crit #dc2626 sobre #fee2e2 e info #0891b2 sobre #cffafe. Bordes #e2e8f0, texto secundario #64748b, terciario #94a3b8, radio de 10px y sombras muy suaves.",
-      "source": "/Users/macbook/sereno_block/tailwind.config.js (tokens primary, ok, warn, crit, info y sidebar) junto con el bloque :root de /Users/macbook/sereno_block/prototipo-fase1.html, que define --bg #eef2f7, --border #e2e8f0, --text-2 #64748b y el radio --r 10px"
+      "source": "/Users/macbook/sereno_block/tailwind.config.js (tokens primary, ok, warn, crit, info y sidebar) junto con el bloque :root de /Users/macbook/sereno_block/prototipo-fase1.html, que define --bg #eef2f7, --border #e2e8f0, --text-2 #64748b y el radio --r 10px",
+      "textGradient": "linear-gradient(120deg, #0f172a 0%, #1e293b 50%, #2563eb 100%)",
+      "ink": "#2563eb",
+      "onBrand": "#FFFFFF"
     },
     "links": {},
     "uiScreens": [
@@ -4251,7 +4293,10 @@ export const projects = [
       "text": "#353535",
       "gradient": "linear-gradient(135deg, #0C7CEC 0%, #1F8BF0 52%, #ECCC04 100%)",
       "mood": "Utilitario y contrastado, como una terminal de caja: azul corporativo de barra superior, amarillo de acento para el saldo y los llamados a la acción, fondo gris papel y tarjetas blancas con sombra corta. Tipografía de etiqueta compacta, mayúsculas para los títulos de sección.",
-      "source": "/Users/macbook/.portafolio-research/clones/servicepay-pos/themes.json (colors.primary 0xFF0c7cec y primary_light 0xFFeccc04 del pt-theme; 0xFFFF6000 del sunmi-theme) + /Users/macbook/.portafolio-research/clones/servicepay-pos/lib/styles/bg.dart (ColorUtil.grayLight 242,243,245) + /Users/macbook/.portafolio-research/clones/servicepay-pos/lib/styles/text.dart (dfltTextColor 53,53,53)"
+      "source": "/Users/macbook/.portafolio-research/clones/servicepay-pos/themes.json (colors.primary 0xFF0c7cec y primary_light 0xFFeccc04 del pt-theme; 0xFFFF6000 del sunmi-theme) + /Users/macbook/.portafolio-research/clones/servicepay-pos/lib/styles/bg.dart (ColorUtil.grayLight 242,243,245) + /Users/macbook/.portafolio-research/clones/servicepay-pos/lib/styles/text.dart (dfltTextColor 53,53,53)",
+      "textGradient": "linear-gradient(120deg, #0C7CEC 0%, #1D80DD 50%, #8E7A02 100%)",
+      "ink": "#0B6DD0",
+      "onBrand": "#0A0A0F"
     },
     "links": {
       "github": "https://github.com/ArturoSojo/servicepay-pos",
@@ -4527,7 +4572,10 @@ export const projects = [
       "text": "#0B0B0B",
       "gradient": "linear-gradient(135deg, #0F79EE 0%, #0F58EE 52%, #EBCA00 100%)",
       "mood": "Corporativo fintech venezolano: azul señal como color de marca sobre blanco limpio, amarillo de alto contraste reservado para llamadas a la acción e iconos, y negro casi puro (#0B0B0B) para anclar el pie de página.",
-      "source": "styles.css líneas 11-15 (:root { --blue:#0f79ee; --yellow:#ebca00; --white:#ffff; --roboto:Roboto,sans-serif; --gray:#efefeffc }); acento #ff7b00 en styles.css líneas 653 y 661; fondo del pie #0b0b0b en styles.css línea 1884"
+      "source": "styles.css líneas 11-15 (:root { --blue:#0f79ee; --yellow:#ebca00; --white:#ffff; --roboto:Roboto,sans-serif; --gray:#efefeffc }); acento #ff7b00 en styles.css líneas 653 y 661; fondo del pie #0b0b0b en styles.css línea 1884",
+      "textGradient": "linear-gradient(120deg, #0F79EE 0%, #0F58EE 50%, #968100 100%)",
+      "ink": "#0E74E4",
+      "onBrand": "#FFFFFF"
     },
     "links": {
       "github": "https://github.com/ArturoSojo/website_paguetodo",
@@ -4804,7 +4852,10 @@ export const projects = [
       "text": "#F8F8F8",
       "gradient": "linear-gradient(135deg, #03112C 0%, #0E2B57 45%, #416AAF 80%, #2BAFCB 100%)",
       "mood": "Azul noche corporativo con un destello cian tecnológico y contrapunto crema cálido: serio y ordenado como una hoja de cuentas, pero con el brillo del logotipo circular que da identidad de marca.",
-      "source": "lib/views/utils/AppColor.dart (primary y primarySoft rgb(65,106,175) = #416AAF, secondary #EDE5CC, primaryExtraSoft #EEF4F4, whiteSoft #F8F8F8, gradiente bottomShadow rgb(43,175,203) = #2BAFCB). Los tonos oscuros bg #03112C y surface #0E2B57 están muestreados de assets/images/bg.jpg, y el cian #2BAFCB se confirma como color dominante de assets/images/logo.jpg."
+      "source": "lib/views/utils/AppColor.dart (primary y primarySoft rgb(65,106,175) = #416AAF, secondary #EDE5CC, primaryExtraSoft #EEF4F4, whiteSoft #F8F8F8, gradiente bottomShadow rgb(43,175,203) = #2BAFCB). Los tonos oscuros bg #03112C y surface #0E2B57 están muestreados de assets/images/bg.jpg, y el cian #2BAFCB se confirma como color dominante de assets/images/logo.jpg.",
+      "textGradient": "linear-gradient(120deg, #687080 0%, #5B6F8D 33%, #4970B2 67%, #2BAFCB 100%)",
+      "ink": "#5F82BC",
+      "onBrand": "#0A0A0F"
     },
     "links": {
       "github": "https://github.com/ArturoSojo/artlex",
@@ -5033,7 +5084,10 @@ export const projects = [
       "text": "#000000",
       "gradient": "linear-gradient(160deg, #416AAF 0%, #2BAFCB 100%)",
       "mood": "Azul institucional sereno con acentos crema y un cian de aire caribeño. Confiable sin ser corporativo, cercano sin ser informal: la paleta de una libreta de contactos de barrio que decidió tomarse en serio.",
-      "source": "lib/views/utils/AppColor.dart — primary y primarySoft = Color.fromARGB(255, 65, 106, 175) → #416AAF; secondary = #EDE5CC; primaryExtraSoft = #EEF4F4; el cian del degradado bottomShadow = Color.fromARGB(255, 43, 175, 203) → #2BAFCB. Fondo blanco de lib/main.dart (scaffoldBackgroundColor: Colors.white) y texto negro de los encabezados. El valor gradient combina primary con el cian de bottomShadow y es la única entrada compuesta por mí; el resto son valores literales del código."
+      "source": "lib/views/utils/AppColor.dart — primary y primarySoft = Color.fromARGB(255, 65, 106, 175) → #416AAF; secondary = #EDE5CC; primaryExtraSoft = #EEF4F4; el cian del degradado bottomShadow = Color.fromARGB(255, 43, 175, 203) → #2BAFCB. Fondo blanco de lib/main.dart (scaffoldBackgroundColor: Colors.white) y texto negro de los encabezados. El valor gradient combina primary con el cian de bottomShadow y es la única entrada compuesta por mí; el resto son valores literales del código.",
+      "textGradient": "linear-gradient(120deg, #416AAF 0%, #2493AB 100%)",
+      "ink": "#416AAF",
+      "onBrand": "#0A0A0F"
     },
     "links": {
       "github": "https://github.com/ArturoSojo/servicios_ya_ve",
@@ -5280,7 +5334,10 @@ export const projects = [
       "text": "#1B1B1B",
       "gradient": "linear-gradient(to right, #24243E, #302B63, #0F0C29)",
       "mood": "Comercio serio y ordenado: azul marino de administración, azul enlace para el precio y un rojo coral que marca lo activo. Grises muy claros, tarjetas blancas con esquinas de 10 px y sombra suave; el único momento oscuro es el degradado violeta-noche del login, que separa visualmente la tienda del panel.",
-      "source": "/Users/macbook/.portafolio-research/clones/sto/vistas/css/style.css — bloque `:root` (líneas 41-53: `--accent-color: #253556`, `--color-three: #EC5252`, `--link-color: #3273dc`, `--border-color: #E1E1E1`, `--bg-color: rgb(246,246,246)`, `--text-color: rgb(27,27,27)`) y `.login-container` (líneas 161-163, degradado `#24243e → #302b63 → #0f0c29`)."
+      "source": "/Users/macbook/.portafolio-research/clones/sto/vistas/css/style.css — bloque `:root` (líneas 41-53: `--accent-color: #253556`, `--color-three: #EC5252`, `--link-color: #3273dc`, `--border-color: #E1E1E1`, `--bg-color: rgb(246,246,246)`, `--text-color: rgb(27,27,27)`) y `.login-container` (líneas 161-163, degradado `#24243e → #302b63 → #0f0c29`).",
+      "textGradient": "linear-gradient(120deg, #24243E 0%, #302B63 50%, #0F0C29 100%)",
+      "ink": "#253556",
+      "onBrand": "#FFFFFF"
     },
     "links": {
       "github": "https://github.com/ArturoSojo/STO",
@@ -5543,7 +5600,10 @@ export const projects = [
       "text": "#E6ECFF",
       "gradient": "linear-gradient(135deg, #1BD3FF 0%, #005CFF 100%)",
       "mood": "Sala de trading nocturna: azul marino casi negro como lienzo, cian eléctrico para todo lo interactivo, verde y rojo reservados exclusivamente al signo del mercado. Tarjetas translúcidas con radios de 20-24 px, sombras profundas y bordes hairline blancos al 12 %; tipografía Poppins semibold para cifras y regular para el resto. Nada decorativo compite con el precio.",
-      "source": "/Users/macbook/.portafolio-research/clones/coin-venture/lib/shared/styles/app_colors.dart (paleta real: bgPrimary #0B1220, bgCard #16294F, primary #27B3FF, primaryDark #0052FF, success #2ECC71, danger #FF5B6A, warning #FFC857, textPrimary #E6ECFF; gradiente primaryButton #1BD3FF → #005CFF). Confirmada por /Users/macbook/.portafolio-research/clones/coin-venture/lib/core/config/theme.dart y /Users/macbook/.portafolio-research/clones/coin-venture/lib/shared/styles/app_typography.dart (fontFamily Poppins)."
+      "source": "/Users/macbook/.portafolio-research/clones/coin-venture/lib/shared/styles/app_colors.dart (paleta real: bgPrimary #0B1220, bgCard #16294F, primary #27B3FF, primaryDark #0052FF, success #2ECC71, danger #FF5B6A, warning #FFC857, textPrimary #E6ECFF; gradiente primaryButton #1BD3FF → #005CFF). Confirmada por /Users/macbook/.portafolio-research/clones/coin-venture/lib/core/config/theme.dart y /Users/macbook/.portafolio-research/clones/coin-venture/lib/shared/styles/app_typography.dart (fontFamily Poppins).",
+      "textGradient": "linear-gradient(120deg, #1BD3FF 0%, #005CFF 100%)",
+      "ink": "#27B3FF",
+      "onBrand": "#0A0A0F"
     },
     "links": {
       "github": "https://github.com/ArturoSojo/Coin-Venture"
@@ -5801,7 +5861,10 @@ export const projects = [
       "text": "#003153",
       "gradient": "linear-gradient(135deg, #003153 0%, #004C7A 50%, #003153 100%)",
       "mood": "Institucional y sobrio: azul marino profundo como color de mando —barra lateral, encabezados, títulos— y un verde esmeralda que se reserva para lo que está vivo o confirmado: el estado activo del menú, la insignia de “Entregado”, el botón de escanear, el anillo de foco. Todo respira sobre un gris casi blanco, con tipografía Inter para el texto y JetBrains Mono para códigos de seguimiento, pesos y correos. Es la estética de un panel de control serio, no de una app de consumo.",
-      "source": "/Users/macbook/axiom_humbolt/src/styles/theme.css (variables reales --navy-blue #003153, --navy-blue-light #004c7a, --navy-blue-dark #001d30, --emerald-green #10B981, --emerald-light #34D399, --emerald-dark #059669, --soft-slate #F8F9FA); el degradado es el del fondo real del login en /Users/macbook/axiom_humbolt/src/app/components/LoginScreen.tsx y las tipografías provienen de /Users/macbook/axiom_humbolt/src/styles/fonts.css"
+      "source": "/Users/macbook/axiom_humbolt/src/styles/theme.css (variables reales --navy-blue #003153, --navy-blue-light #004c7a, --navy-blue-dark #001d30, --emerald-green #10B981, --emerald-light #34D399, --emerald-dark #059669, --soft-slate #F8F9FA); el degradado es el del fondo real del login en /Users/macbook/axiom_humbolt/src/app/components/LoginScreen.tsx y las tipografías provienen de /Users/macbook/axiom_humbolt/src/styles/fonts.css",
+      "textGradient": "linear-gradient(120deg, #003153 0%, #004C7A 50%, #003153 100%)",
+      "ink": "#003153",
+      "onBrand": "#FFFFFF"
     },
     "links": {},
     "uiScreens": [
@@ -6010,7 +6073,10 @@ export const projects = [
       "text": "#2b2424",
       "gradient": "linear-gradient(135deg, #e6c374, #b8893b)",
       "mood": "Joyería clásica colombiana: burdeos profundo de terciopelo, oro cálido, crema de vitrina y tinta parda; elegante, cálido y ligeramente señorial, con el dorado reservado para lo que debe brillar.",
-      "source": "src/pages-routes/landing/Landing.css y src/pages-routes/login/Login.css (:root --burgundy #8d0101, --burgundy-dark #5e0101, --gold #b8893b, --gold-soft #c9a24b, --ink #2b2424, --cream #f7f2ec, --line #e7ddd2); tokens de sistema en src/styles/brand.css (--brand-strong #8b0000, --brand-soft #4a0e0e, --cream #f7f2ec) registrados como utilidades Tailwind en src/index.css. El degradado es el del botón dorado `.landing-btn-gold`."
+      "source": "src/pages-routes/landing/Landing.css y src/pages-routes/login/Login.css (:root --burgundy #8d0101, --burgundy-dark #5e0101, --gold #b8893b, --gold-soft #c9a24b, --ink #2b2424, --cream #f7f2ec, --line #e7ddd2); tokens de sistema en src/styles/brand.css (--brand-strong #8b0000, --brand-soft #4a0e0e, --cream #f7f2ec) registrados como utilidades Tailwind en src/index.css. El degradado es el del botón dorado `.landing-btn-gold`.",
+      "textGradient": "linear-gradient(120deg, #937D4A 0%, #A27934 100%)",
+      "ink": "#8d0101",
+      "onBrand": "#0A0A0F"
     },
     "links": {},
     "uiScreens": [
@@ -6303,7 +6369,10 @@ export const projects = [
       "text": "#0E0F0C",
       "gradient": "linear-gradient(135deg, #0E0F0C 0%, #1E6626 58%, #61C568 100%)",
       "mood": "Editorial ejecutivo y cálido: papel hueso en vez de blanco puro, tinta casi negra, bordes de medio píxel y un único verde eléctrico reservado para la señal —score alto, diferencial a favor, cierre confirmado—, con ámbar para lo que hay que compensar. Tipografía Geist para la interfaz, Geist Mono con cifras tabulares en todo lo monetario e Instrument Serif en cursiva como acento editorial en los titulares.",
-      "source": "/Users/macbook/swapdealer/src/styles/redesign.css (tokens --bg-0 #FBFAF7, --ink-0 #0E0F0C, --accent oklch(0.74 0.16 145), --accent-deep oklch(0.45 0.12 145), --amber-deep oklch(0.45 0.10 70)) y /Users/macbook/swapdealer/src/styles/theme.css; los valores oklch se convirtieron a hexadecimal"
+      "source": "/Users/macbook/swapdealer/src/styles/redesign.css (tokens --bg-0 #FBFAF7, --ink-0 #0E0F0C, --accent oklch(0.74 0.16 145), --accent-deep oklch(0.45 0.12 145), --amber-deep oklch(0.45 0.10 70)) y /Users/macbook/swapdealer/src/styles/theme.css; los valores oklch se convirtieron a hexadecimal",
+      "textGradient": "linear-gradient(120deg, #0E0F0C 0%, #1E6626 50%, #468E4B 100%)",
+      "ink": "#1E6626",
+      "onBrand": "#FFFFFF"
     },
     "links": {},
     "uiScreens": [
@@ -6511,7 +6580,10 @@ export const projects = [
       "text": "#FFFFFF",
       "gradient": "linear-gradient(135deg, #7000FF 0%, #00FF94 100%)",
       "mood": "Cyberpunk nocturno: negro absoluto, violeta eléctrico y verde neón con vidrio esmerilado, halos difuminados y oro para todo lo que cuesta dinero. Inter para la interfaz, JetBrains Mono en negrita a 48 px para la palabra que se lee.",
-      "source": "/Users/macbook/tiktext/src/app/components/StoryCard.tsx (hex de marca en línea, reutilizados en App.tsx, StoryLab.tsx, CreatorWallet.tsx y FeedGrid.tsx); tipografías en /Users/macbook/tiktext/src/styles/fonts.css"
+      "source": "/Users/macbook/tiktext/src/app/components/StoryCard.tsx (hex de marca en línea, reutilizados en App.tsx, StoryLab.tsx, CreatorWallet.tsx y FeedGrid.tsx); tipografías en /Users/macbook/tiktext/src/styles/fonts.css",
+      "textGradient": "linear-gradient(120deg, #811FFF 0%, #00FF94 100%)",
+      "ink": "#9847FF",
+      "onBrand": "#0A0A0F"
     },
     "links": {},
     "uiScreens": [

@@ -13,6 +13,13 @@ import { BrandButton, Chip, CountMetric, Marquee, ProjectOutro, SectionHead } fr
 import { DragRail, PhoneFrame } from "@/components/projects/frames";
 import { Reveal, Stagger, StaggerItem, useEnteredView } from "@/components/projects/reveal";
 
+/**
+ * Redondea un numero destinado a un atributo SVG. El navegador reserializa los
+ * atributos numericos de SVG con menos precision que el renderizador del
+ * servidor, y la diferencia dispara un fallo de hidratacion de React.
+ */
+const svgNum = (n: number) => Number(n.toFixed(3));
+
 const p = getProject("robust-pickleball")!;
 const nxt = nextProject("robust-pickleball");
 
@@ -453,7 +460,7 @@ const MockDna = () => (
                         </div>
                         <svg viewBox="0 0 48 16" className="h-4 w-12 shrink-0" fill="none">
                             <polyline
-                                points={s.spark.map((v, i) => `${i * 9.6},${16 - (v / 100) * 15}`).join(" ")}
+                                points={s.spark.map((v, i) => `${svgNum(i * 9.6)},${svgNum(16 - (v / 100) * 15)}`).join(" ")}
                                 stroke={s.tone === "green" ? GREEN : s.tone === "amber" ? AMBER : RED_INK}
                                 strokeWidth="1.4"
                                 strokeLinejoin="round"

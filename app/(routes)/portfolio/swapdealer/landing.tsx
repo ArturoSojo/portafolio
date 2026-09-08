@@ -36,6 +36,13 @@ import { BrandButton, Chip, CountMetric, Marquee, ProjectOutro, SectionHead } fr
 import { AutoVideo, BrowserFrame, DragRail, ShotCard } from "@/components/projects/frames";
 import { Reveal, RevealWords, Stagger, StaggerItem, useEnteredView } from "@/components/projects/reveal";
 
+/**
+ * Redondea un numero destinado a un atributo SVG. El navegador reserializa los
+ * atributos numericos de SVG con menos precision que el renderizador del
+ * servidor, y la diferencia dispara un fallo de hidratacion de React.
+ */
+const svgNum = (n: number) => Number(n.toFixed(3));
+
 const p = getProject("swapdealer")!;
 const nxt = nextProject("swapdealer");
 
@@ -381,8 +388,8 @@ const ScoreRing = ({ value, size = 132, stroke = 10 }: { value: number; size?: n
                     stroke={color}
                     strokeWidth={stroke}
                     strokeLinecap="round"
-                    strokeDasharray={c}
-                    strokeDashoffset={c - (c * shown) / 100}
+                    strokeDasharray={svgNum(c)}
+                    strokeDashoffset={svgNum(c - (c * shown) / 100)}
                     style={{ transition: "stroke 220ms ease" }}
                 />
             </svg>
@@ -728,8 +735,8 @@ const MockMatches = () => (
                                             stroke={col}
                                             strokeWidth="4"
                                             strokeLinecap="round"
-                                            strokeDasharray={dash}
-                                            strokeDashoffset={dash - (dash * m.score) / 100}
+                                            strokeDasharray={svgNum(dash)}
+                                            strokeDashoffset={svgNum(dash - (dash * m.score) / 100)}
                                         />
                                     </svg>
                                     <span className="sd-mono absolute text-[10px] font-semibold" style={{ color: col }}>

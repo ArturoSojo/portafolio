@@ -163,7 +163,7 @@ const TermWindow = ({
     children: React.ReactNode;
     className?: string;
 }) => (
-    <div className={`rs-window relative overflow-hidden rounded-lg ${className ?? ""}`}>
+    <div className={`rs-window relative min-w-0 overflow-hidden rounded-lg ${className ?? ""}`}>
         <div className="rs-window-bar flex items-center gap-2 px-3 py-2">
             <span className="h-2 w-2 rounded-full bg-[#F03030]" />
             <span className="h-2 w-2 rounded-full bg-[#F59E0B]" />
@@ -181,7 +181,7 @@ const TermWindow = ({
 
 const MockStore = () => (
     <div className="bg-[#07070C] p-4 text-[11px]">
-        <div className="rs-mono flex gap-4 overflow-hidden border-y border-white/10 py-1.5 text-[9px] text-white/45">
+        <div className="rs-mono flex min-w-0 gap-4 overflow-hidden border-y border-white/10 py-1.5 text-[9px] text-white/45">
             <span className="whitespace-nowrap">⚡ Jose R. · recargó 520 + 52 Diamantes · hace 3 min</span>
             <span className="whitespace-nowrap text-white/25">⚡ Andrea M. · 1.060 Gold · hace 7 min</span>
         </div>
@@ -560,7 +560,7 @@ const Landing = () => {
                             { title: "tienda · pago", node: <MockPay />, name: p.uiScreens[2]?.name },
                             { title: "panel · resumen", node: <MockAdmin />, name: p.uiScreens[4]?.name },
                         ].map((m, i) => (
-                            <Reveal key={m.title} direction="up" delay={i * 0.1}>
+                            <Reveal key={m.title} direction="up" delay={i * 0.1} className="min-w-0">
                                 <TermWindow title={m.title}>{m.node}</TermWindow>
                                 <p className="rs-mono mt-3 text-[10px] uppercase tracking-[0.16em] opacity-45">{m.name}</p>
                             </Reveal>

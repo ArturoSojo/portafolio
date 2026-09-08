@@ -99,7 +99,7 @@ export const ShotCard = ({
             style={{ background: "linear-gradient(to top, color-mix(in srgb, var(--brand-primary) 32%, transparent), transparent 55%)" }}
         />
         {caption && (
-            <figcaption className="absolute inset-x-0 bottom-0 translate-y-full px-4 py-3 text-xs transition-transform duration-500 bg-black/70 backdrop-blur-sm group-hover:translate-y-0">
+            <figcaption className="absolute inset-x-0 bottom-0 translate-y-full px-4 py-3 text-xs text-white transition-transform duration-500 bg-black/70 backdrop-blur-sm group-hover:translate-y-0">
                 {caption}
             </figcaption>
         )}

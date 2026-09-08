@@ -48,7 +48,9 @@ main.screen-locked {
 }
 
 .brand-gradient-text {
-  background-image: var(--brand-gradient, linear-gradient(90deg, #00d2ff, #3a7bd5));
+  /* Nunca el degradado de marca a secas: suele terminar en el color del fondo
+     y la cola del titular se volveria invisible. */
+  background-image: var(--brand-text-gradient, var(--brand-gradient, linear-gradient(90deg, #00d2ff, #3a7bd5)));
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
