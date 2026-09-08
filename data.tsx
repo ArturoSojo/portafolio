@@ -1,4 +1,4 @@
-import { BookText, CodeSquare, HomeIcon, UserRound, Linkedin, Twitter, Rss, Twitch, Youtube, Crop, Pencil, Computer, Book, Rocket, Speech, Facebook, Instagram} from "lucide-react";
+import { BookText, CodeSquare, HomeIcon, UserRound, Linkedin, Crop, Pencil, Computer, Facebook, Instagram, Youtube, Github, Smartphone, Flame, ShieldCheck} from "lucide-react";
 
 export const socialNetworks = [
     {
@@ -6,7 +6,7 @@ export const socialNetworks = [
         logo: <Youtube size={30} strokeWidth={1} />,
         src: "https://www.youtube.com/@arturosojovivas1204",
     },
-    
+
     {
         id: 2,
         logo: <Linkedin size={30} strokeWidth={1} />,
@@ -14,11 +14,16 @@ export const socialNetworks = [
     },
     {
         id: 3,
+        logo: <Github size={30} strokeWidth={1} />,
+        src: "https://github.com/ArturoSojo",
+    },
+    {
+        id: 4,
         logo: <Facebook size={30} strokeWidth={1} />,
         src: "https://www.facebook.com/arturo.sojovivas",
     },
     {
-        id: 4,
+        id: 5,
         logo: <Instagram size={30} strokeWidth={1} />,
         src: "https://www.instagram.com/arturosojovivas/",
     },
@@ -51,32 +56,46 @@ export const itemsNavbar = [
         icon: <CodeSquare size={25} color="#fff" strokeWidth={1} />,
         link: "/portfolio",
     },
-   
+
 ];
 
 export const dataAboutPage = [
     {
         id: 1,
-        title: "Frontend Developer",
-        subtitle: "Servicios Paguetodo C.A.",
-        description: "Trabajé con un equipo maravilloso para desarrollar ptoductos digitales de alta calidad que impulsaron el éxito de clientes.",
-        date: "2023 - 2025",
+        title: "Desarrollador Móvil (Android & iOS)",
+        subtitle: "Soluciones Tecnológicas Epale",
+        description: "Diseño y desarrollo aplicaciones multiplataforma con Flutter y Dart: mensajería, pagos y verificación de identidad. Llevo el ciclo completo, desde la interfaz hasta el despliegue en las tiendas.",
+        date: "2025 - Hoy",
     },
     {
         id: 2,
-        title: "Administrador de Empresas",
-        subtitle: "U.P.T.B.A.L.",
-        description: "Estudié en la Universidad Poletécnica Territorial 'Argelia Laya' Administración de empresas durante 2 años.",
-        date: "2021 - 2023",
+        title: "Analista de Sistemas",
+        subtitle: "Pegaso Consulting C.A.",
+        description: "Analicé requerimientos complejos para diseñar soluciones escalables, traduje necesidades de negocio a especificaciones técnicas y depuré sistemas en producción.",
+        date: "2025",
     },
     {
         id: 3,
-        title: "Informática",
-        subtitle: "U.P.T.B.A.L",
-        description: "Estudié en la Universidad Poletécnica Territorial 'Argelia Laya' Informática durante 2 años.",
+        title: "Desarrollador Frontend",
+        subtitle: "Servicios Paguetodo C.A.",
+        description: "Lideré el frontend de aplicaciones web y del punto de venta móvil, integrando servicios de pago y APIs de terceros con metodologías ágiles.",
+        date: "2023 - 2025",
+    },
+    {
+        id: 4,
+        title: "Ingeniería Informática",
+        subtitle: "U.P.T. 'Argelia Laya'",
+        description: "Formación en desarrollo de software y arquitectura de sistemas en la Universidad Politécnica Territorial 'Argelia Laya'.",
+        date: "2021 - 2023",
+    },
+    {
+        id: 5,
+        title: "Administración de Empresas",
+        subtitle: "U.P.T. 'Argelia Laya'",
+        description: "Formación en gestión de proyectos y optimización de recursos, la base con la que entiendo el negocio detrás de cada producto.",
         date: "2019 - 2021",
     },
-    
+
 ]
 
 export const dataCounter = [
@@ -89,14 +108,14 @@ export const dataCounter = [
     },
     {
         id: 1,
-        endCounter: 5,
+        endCounter: 8,
         text: "Lenguajes conocidos",
         lineRight: true,
         lineRightMobile: false,
     },
     {
         id: 2,
-        endCounter: 14,
+        endCounter: 24,
         text: "Proyectos finalizados",
         lineRight: true,
         lineRightMobile: true,
@@ -112,68 +131,36 @@ export const dataCounter = [
 
 export const serviceData = [
     {
-        icon: <Crop />,
+        icon: <Smartphone />,
         title: "Desarrollo móvil",
-        description: "Diseño y desarrollo de aplicaciones móviles a interactivas, optimizadas para un buen rendimiento."
-        },
-    {
-        icon: <Pencil />,
-        title: "Diseño web",
-        description: "Diseño creativo y profesional de interfaces web intuitivas y atractivas, centradas en la experiencia del usuario",
+        description: "Apps nativas para Android e iOS con Flutter y Dart, publicadas en las tiendas y optimizadas para rendimiento real."
     },
     {
         icon: <Computer />,
         title: "Desarrollo web",
-        description: "Diseño y desarrollo de sitios web a medida, adaptados a tus necesidades",
+        description: "Aplicaciones web a medida con React, Next.js y TypeScript, desde la landing pública hasta el panel de administración.",
     },
-  
-];
+    {
+        icon: <Crop />,
+        title: "Backend y Firebase",
+        description: "Cloud Functions, Firestore, reglas de seguridad y autenticación: la trastienda que hace que el producto funcione.",
+    },
+    {
+        icon: <Flame />,
+        title: "Integración de pagos",
+        description: "Pasarelas, Pago Móvil, verificación bancaria y compras dentro de la app conectadas de extremo a extremo.",
+    },
+    {
+        icon: <Pencil />,
+        title: "Diseño de interfaces",
+        description: "Interfaces intuitivas y responsivas que reflejan la identidad de marca y se sienten bien en la mano.",
+    },
+    {
+        icon: <ShieldCheck />,
+        title: "Seguridad y KYC",
+        description: "Verificación de identidad, control de acceso por roles y reglas que cierran la puerta desde el servidor.",
+    },
 
-export const dataPortfolio = [
-    {
-        id: 1,
-        title: "APP Service Payments",
-        image: "/image-1.png",
-        urlGithub: "https://github.com/ArturoSojo/servicepay-pos",
-        urlDemo: "https://www.youtube.com/shorts/sAOwu_-WLBc",
-    },
-    {
-        id: 6,
-        title: "Website",
-        image: "/image-6.png",
-        urlGithub: "https://github.com/ArturoSojo/website_paguetodo",
-        urlDemo: "https://paguetodo.com/",
-    },
-    {
-        id: 2,
-        title: "CliffPickleball",
-        image: "/image-2.jpg",
-        urlGithub: "https://github.com/ArturoSojo/cliff_pickleball",
-        urlDemo: "https://www.youtube.com/shorts/NitooJQCq6I",
-    },
-    {
-        id: 3,
-        title: "Online Store",
-        image: "/image-3.png",
-        urlGithub: "https://github.com/ArturoSojo/STO",
-        urlDemo: "https://youtu.be/odptyxik5Wk",
-    },
-    {
-        id: 4,
-        title: "ARTLEX",
-        image: "/image-4.jpg",
-        urlGithub: "https://github.com/ArturoSojo/artlex",
-        urlDemo: "https://www.youtube.com/shorts/W6NppqNkH5Y",
-    },
-    {
-        id: 5,
-        title: "ServiciosYa",
-        image: "/image-5.jpg",
-        urlGithub: "https://github.com/ArturoSojo/servicios_ya_ve",
-        urlDemo: "https://www.youtube.com/shorts/B6CBIvyBBSU",
-    },
-    
-   
 ];
 
 export const dataTestimonials = [
@@ -220,3 +207,5 @@ export const dataTestimonials = [
         imageUrl: "/profile6.png",
     },
 ];
+
+export { dataPortfolio } from "@/data-projects";

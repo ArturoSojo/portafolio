@@ -1,5 +1,12 @@
 import type { Config } from "tailwindcss";
 
+// Escala de opacidad completa (0-100 de uno en uno): las landings de proyecto usan
+// muchos valores intermedios (bg-white/8, border-white/12…) que la escala por
+// defecto de Tailwind 3 no cubre y que, si faltan, se descartan en silencio.
+const opacity = Object.fromEntries(
+  Array.from({ length: 101 }, (_, i) => [String(i), String(i / 100)])
+);
+
 const config: Config = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -8,6 +15,7 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      opacity,
       colors: {
         secondary: "#00d2ff",
         darkBg: "#132124",

@@ -2,9 +2,16 @@
 
 import { socialNetworks } from "@/data";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { MotionTransition } from "./transition-component";
 
 const Header = () => {
+    const pathname = usePathname();
+
+    // Las landings de proyecto traen su propia barra superior con la marca del producto.
+    const isProjectLanding = /^\/portfolio\/.+/.test(pathname ?? "");
+    if (isProjectLanding) return null;
+
     return (
         <MotionTransition position="bottom" className="absolute z-40 inline-block w-full top-5 md:top-10">
             <header>

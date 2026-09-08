@@ -27,7 +27,8 @@ const Introduction = () => {
                     </h1>
 
                     <p className="mx-auto mb-2 text-xl md:text-xl md:mx-0 md:mb-8">
-                        Como desarrollador frontend, me dedico a combinar diseño y funcionalidad para crear experiencias digitales impactantes y accesibles.
+                        Desarrollador móvil y web con <span className="font-bold text-secondary">4 años de experiencia</span> construyendo
+                        apps en Flutter y plataformas en React y Next.js: de la interfaz a la tienda, con el backend incluido.
                     </p>
 
                     <div className="flex items-center justify-center gap-3 md:justify-start md:gap-10">

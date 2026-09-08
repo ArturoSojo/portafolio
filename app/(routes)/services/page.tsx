@@ -16,11 +16,10 @@ const ServicesPage = () => {
       Mis <span className="font-bold text-secondary"> habilidades.</span>
     </h1>
     <p className="mb-3 text-xl text-gray-300 aling-justify">
-      Ofrezco habilidades de desarrollo móvil y web frontend especializados en
-      la creación de sitios web y aplicaciones atractivas y funcionales.
-      Utilizando las últimas tecnologías, diseño interfaces de usuario
-      intuitivas y responsivas que reflejan la identidad de marca y mejoran su
-      presencia.
+      Cuatro años de desarrollo móvil y web: apps multiplataforma en Flutter,
+      plataformas en React y Next.js, y el backend serverless que las sostiene
+      sobre Firebase. Diseño interfaces intuitivas y responsivas, integro pagos
+      y APIs, y llevo el producto hasta la tienda.
     </p>
     <a href="https://wa.me/584168624450" 
         className="px-3 py-2 my-5 transition-all border-2 cursor-pointer text-md w-fit text-secondary border-secondary rounded-xl hover:shadow-xl hover:shadow-secondary">
